@@ -1,0 +1,101 @@
+#footer {
+  height: 349px;
+  background: #818EEA;
+  width: 1280px;
+  position: absolute;
+  left: 0;
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 0 0;
+
+    .title {
+      h1 {
+        color: white;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px; /* 122.222% */
+        letter-spacing: -1.5px;
+      }
+
+      p {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.3px;
+      }
+
+      input {
+        padding: 0 0 0 5px;
+        background: none;
+        width: 398px;
+        height: 40px;
+        outline: none;
+        position: relative;
+        border-radius: 8px;
+        border: 0.5px solid var(--Background-color, #FFF);
+
+        color: white;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.3px;
+      }
+
+      input::placeholder {
+        color: white;
+      }
+
+      input.invalid {
+        border-color: red;
+      }
+
+      span.error-mark {
+        color: red; /* Change the color of the exclamation mark to red */
+        margin-left: 5px; /* Adjust the spacing as needed */
+        font-size: 14px; /* Adjust the font size as needed */
+      }
+
+
+      button {
+        background: none;
+        width: 80px;
+        height: 43px;
+        position: absolute;
+        left: 394px;
+        border-radius: 8px;
+        border: none;
+        color: white;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: -0.3px;
+      }
+    }
+
+    .footer--info {
+      h3 {
+        color: #FFF;
+
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 22px; /* 137.5% */
+        letter-spacing: -0.4px;
+      }
+
+      p {
+        color: #FFF;
+
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px; /* 162.5% */
+        letter-spacing: -0.2px;
+      }
+    }
+
+  }
+}

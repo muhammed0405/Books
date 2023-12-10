@@ -1,0 +1,51 @@
+#header {
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+
+    .nav-bar {
+      width: 680px;
+      height: 24px;
+      display: flex;
+      gap: 32px;
+
+
+      a {
+        color: var(--Text-color, #19272E);
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: -0.6px;
+      }
+
+      .active {
+        font-size: 20px;
+        transition: 0.5s;
+      }
+    }
+
+    .search-menu {
+      input {
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        padding: 7px;
+      }
+    }
+
+    .icons {
+      width: 120px;
+      height: 24px;
+
+      display: flex;
+      gap: 10px;
+
+      font-size: 20px;
+
+    }
+
+  }
+}
