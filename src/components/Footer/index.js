@@ -17,6 +17,7 @@ const Footer = () => {
 		}
 	}
 	return (
+		<div>
 		<div id="footer">
 			<div className="container">
 				<div className="footer">
@@ -37,7 +38,7 @@ const Footer = () => {
 							placeholder={'Email Address'}
 							className={isValid ? '' : 'invalid'}
 						/>
-						{!isValid && <span className="error-mark">!</span>}
+						
 						<button
 							onClick={() => {
 								setValue('')
@@ -45,6 +46,7 @@ const Footer = () => {
 						>
 							Sign Up
 						</button>
+						{!isValid && <span style={{position:"absolute", left: "170px" , bottom: "160px" }} className="error-mark"> There must be a  " @gmail.com " ! </span>}
 					</div>
 
 					<div className="footer--info">
@@ -84,7 +86,9 @@ const Footer = () => {
 					</div>
 				</div>
 			</div>
+		</div>	
 		</div>
+		
 	)
 }
 

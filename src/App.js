@@ -12,6 +12,7 @@ function App() {
 			<Header dark={dark} setDark={setDark} />
 			<Routes>
 				<Route path={'/'} element={<Home />} />
+				
 			</Routes>
 			<Footer />
 		</>

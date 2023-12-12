@@ -1,0 +1,41 @@
+.genres {
+    margin: 132px 0 ;
+
+    .genres--title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+
+
+
+        h1 {
+            color: #19272E;
+            text-align: start;
+            font-family: Public Sans;
+            font-size: 48px;
+            font-weight: 500;
+        }
+
+        a {
+            color: #818EEA;
+            text-align: center;
+            font-family: Public Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            /* 21.6px */
+        }
+    }
+
+
+    .genres--container {
+        margin: 40px 0 ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0 50px;
+    }
+}
