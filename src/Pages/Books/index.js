@@ -21,6 +21,8 @@ const Books = () => {
             <h1>This is definately last test push</h1>
 
             <h1>Test</h1>
+
+            <h1>Мастерге прямой пуш кыла бер жоодарга кылыштын керек эмес</h1>
         </div>
     );
 };
