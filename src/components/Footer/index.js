@@ -18,77 +18,88 @@ const Footer = () => {
 	}
 	return (
 		<div>
-		<div id="footer">
-			<div className="container">
-				<div className="footer">
-					<div className="title">
-						<h1>Sign up for our newsletter</h1>
-						<p>
-							Be the first to know about our special offers, news, and updates.
-						</p>
-						<input
-							type="email"
-							value={value}
-							onChange={(e) => {
-								setValue(e.target.value)
-								// Reset validation when the user types
-								setIsValid(true)
-							}}
-							onKeyDown={enterEvent}
-							placeholder={'Email Address'}
-							className={isValid ? '' : 'invalid'}
-						/>
-						
-						<button
-							onClick={() => {
-								setValue('')
-							}}
-						>
-							Sign Up
-						</button>
-						{!isValid && <span style={{position:"absolute", left: "170px" , bottom: "160px" }} className="error-mark"> There must be a  " @gmail.com " ! </span>}
-					</div>
+			<div id="footer">
+				<div className="container">
+					<div className="footer">
+						<div className="title">
+							<h1>Sign up for our newsletter</h1>
+							<p>
+								Be the first to know about our special offers, news, and
+								updates.
+							</p>
+							<div className="footer--emailSendler">
 
-					<div className="footer--info">
-						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-					</div>
+								<input
+								type="email"
+								value={value}
+								onChange={(e) => {
+									setValue(e.target.value)
+									// Reset validation when the user types
+									setIsValid(true)
+								}}
+								onKeyDown={enterEvent}
+								placeholder={'Email Address'}
+								className={isValid ? '' : 'invalid'}
+							/>
 
-					<div className="footer--info">
-						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-					</div>
+							<button
+								onClick={() => {
+									setValue('')
+								}}
+							>
+								Sign Up
+							</button>
+							{!isValid && (
+								<span
+									className="error-mark"
+								>
+									There must be a " @gmail.com " !
+								</span>
+							)}
 
-					<div className="footer--info">
-						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-					</div>
+							</div>
+							
+						</div>
 
-					<div className="footer--info">
-						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
-						<p>Lorem ipsum</p>
+						<div className="footer--info">
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+						</div>
+
+						<div className="footer--info">
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+						</div>
+
+						<div className="footer--info">
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+						</div>
+
+						<div className="footer--info">
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+							<p>Lorem ipsum</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>	
 		</div>
-		
 	)
 }
 
