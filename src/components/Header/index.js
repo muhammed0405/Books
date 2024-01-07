@@ -28,7 +28,7 @@ const Header = ({ dark, setDark }) => {
 				<div className="container">
 					<div
 						className="header"
-						style={{ color: dark ? 'white' : 'black', transition: '0.5s'}}
+						style={{ color: dark ? 'white' : 'black', transition: '0.5s' }}
 					>
 						<div className="nav-bar">
 							<NavLink
@@ -69,16 +69,30 @@ const Header = ({ dark, setDark }) => {
 						</div>
 						{searchVisible && (
 							<div className="search-menu">
-								<input type="search" placeholder="Search books"  style={{border: dark? "1px solid white" : "1px solid black"}}/>
+								<input
+									type="search"
+									placeholder="Search books"
+									style={{
+										border: dark ? '1px solid white' : '1px solid black'
+									}}
+								/>
 							</div>
 						)}
 						<div className="icons">
 							<CiSearch onClick={toggleSearch} />
 							<div className="bag">
-								<IoBag /> 0
+								<NavLink
+									to={'/cart'}
+									style={{
+										color: dark ? 'white' : 'black',
+										transition: '0.5s'
+									}}
+								>
+									<IoBag /> 0
+								</NavLink>
 							</div>
 							<div className="dark-mode">
-								<DarkMode dark={dark} setDark={setDark}/>
+								<DarkMode dark={dark} setDark={setDark} />
 							</div>
 						</div>
 					</div>
