@@ -11,9 +11,7 @@ const Books = () => {
             <p>I need to understand how to work with Git hub </p>
 
             <h1>It's hard to understand</h1>
-
-
-            <h1>Why can you tell me?</h1>
+            
         </div>
     );
 };
