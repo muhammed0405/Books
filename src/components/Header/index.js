@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { CiSearch } from 'react-icons/ci'
 import { IoBag } from 'react-icons/io5'
-import { BsBrightnessHigh } from 'react-icons/bs'
 import './style.scss'
+import DarkMode from "./DarkMode/DarkMode";
 
 const Header = ({ dark, setDark }) => {
 	const [searchVisible, setSearchVisible] = useState(false)
 
+	// finish this function
 	const toggleSearch = () => {
 		setSearchVisible(!searchVisible)
 	}
@@ -27,7 +28,7 @@ const Header = ({ dark, setDark }) => {
 				<div className="container">
 					<div
 						className="header"
-						style={{ color: dark ? 'white' : 'black', transition: '0.5s' }}
+						style={{ color: dark ? 'white' : 'black', transition: '0.5s'}}
 					>
 						<div className="nav-bar">
 							<NavLink
@@ -68,7 +69,7 @@ const Header = ({ dark, setDark }) => {
 						</div>
 						{searchVisible && (
 							<div className="search-menu">
-								<input type="search" placeholder="Search books" />
+								<input type="search" placeholder="Search books"  style={{border: dark? "1px solid white" : "1px solid black"}}/>
 							</div>
 						)}
 						<div className="icons">
@@ -77,7 +78,7 @@ const Header = ({ dark, setDark }) => {
 								<IoBag /> 0
 							</div>
 							<div className="dark-mode">
-								<BsBrightnessHigh onClick={() => setDark(!dark)} />
+								<DarkMode dark={dark} setDark={setDark}/>
 							</div>
 						</div>
 					</div>

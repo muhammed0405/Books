@@ -12,7 +12,7 @@ function App() {
 		<>
 			<Header dark={dark} setDark={setDark} />
 			<Routes>
-				<Route path={'/'} element={<Home />} />
+				<Route path={'/'} element={<Home dark={dark}/>} />
 				<Route path={'/'} element={<Books />} />
 			</Routes>
 			<Footer />

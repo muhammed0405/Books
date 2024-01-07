@@ -8,13 +8,13 @@ import Brain from "../../../assets/img/brain.svg"
 import Heart from "../../../assets/img/heart.svg"
 import Detective from "../../../assets/img/detective.svg"
 import Money from "../../../assets/img/money.svg"
-const Genres = ()=>{
+const Genres = ({blackColor})=>{
     return(
         <>
             <div className="container">
                 <div className="genres">
                     <div className="genres--title">
-                      <h1>Genres</h1>
+                      <h1 style={{transition: '0.5s',color: blackColor? "white" : "black"}} >Genres</h1>
                       <NavLink path="/view_all"> View All</NavLink>  
                     </div>
                     
