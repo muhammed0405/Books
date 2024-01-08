@@ -15,7 +15,7 @@ const Cart = () => {
 						<h1 className={'cartTitle'}>Your cart</h1>
 
 						{
-							// here when you press the link you should to go all books
+							// here when you press the link you should to go to all books
 						}
 						<div className="returnToShop">
 							<p>Not ready to checkout?</p>
