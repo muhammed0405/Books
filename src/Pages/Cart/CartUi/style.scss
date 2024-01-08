@@ -5,6 +5,7 @@
   margin: 30px 0 ;
   padding-bottom: 32px ;
   border-bottom: 1px solid rgba(25, 39, 46, 0.30);
+  position: relative;
 
   img{
     width: 25%  ;
@@ -16,13 +17,14 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 5px 0 10px 0 ;
+    width: 280px;
 
     .title{
       h1{
         color:  #19272E;
         font-size: 16px;
         font-weight: 700;
-        line-height: 120%;
+        margin: 0 0 20px 0 ;
       }
 
       .author{
@@ -62,6 +64,8 @@
     font-weight: 700;
     letter-spacing: -0.4px;
     text-decoration-line: underline;
+    position: absolute;
+    right: 0;
   }
 
 }
