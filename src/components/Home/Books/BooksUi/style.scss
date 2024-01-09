@@ -1,0 +1,23 @@
+.booksUi {
+	width: 210px;
+
+	img {
+		width: 100%;
+	}
+
+	h1 {
+		color: var(--Text-color, #19272e);
+		font-family: Public Sans;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	p {
+		color: var(--Text-color, #19272e);
+		font-family: Public Sans;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 140%; /* 22.4px */
+	}
+}

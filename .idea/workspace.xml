@@ -5,14 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="i added cart">
-      <change afterPath="$PROJECT_DIR$/src/components/bookData/booksList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_27_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_27_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_40_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_40_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_7_12_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_7_12_PM_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_7_12_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_11_16_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_11_16_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_6_43_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_6_43_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_7_16_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_7_16_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_9_2024_8_41_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_9_2024_8_41_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/climate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/harryPotter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/horse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/itWas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/love.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/newName.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/rest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/subtle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/towerOfBooks.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/AboutUs/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/AboutUs/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/Books/BooksUi/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/Books/BooksUi/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/Books/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/Books/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/NewBooks/newBooksUi/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/NewBooks/newBooksUi/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Home/NewBooks/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Books/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Books/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Cart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/DarkMode/DarkMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/DarkMode/DarkMode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Hero/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Hero/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +156,7 @@
       <workItem from="1704710276260" duration="2306000" />
       <workItem from="1704719318769" duration="713000" />
       <workItem from="1704805751681" duration="2704000" />
-      <workItem from="1704808485257" duration="320000" />
+      <workItem from="1704808485257" duration="2759000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -160,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704697231420</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="i added cart">
+      <option name="closed" value="true" />
+      <created>1704808817184</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704808817184</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
