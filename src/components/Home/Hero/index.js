@@ -6,6 +6,8 @@ const Hero = ({blackColor}) => {
 	console.log(
 		blackColor
 	)
+
+
 	return (
 		<div
 			id="hero"

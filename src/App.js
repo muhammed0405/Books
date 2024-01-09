@@ -13,13 +13,13 @@ function App() {
 		<>
 			<Header dark={dark} setDark={setDark} />
 			<Routes>
-				<Route path={'/'} element={<Home dark={dark}/>} />
+				<Route path={'/'} element={<Home dark={dark} />} />
 				<Route path={'/books'} element={<Books />} />
-				<Route path={"/cart"} element={<Cart/>}/>
+				<Route path={"/cart"} element={<Cart />} dark={dark} />
 			</Routes>
 			<Footer />
 		</>
 	)
 }
 
-export default App
+export default App;

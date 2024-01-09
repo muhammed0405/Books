@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { CiSearch } from 'react-icons/ci'
 import { IoBag } from 'react-icons/io5'
 import './style.scss'
-import DarkMode from "./DarkMode/DarkMode";
+import DarkMode from './DarkMode/DarkMode'
 
 const Header = ({ dark, setDark }) => {
 	const [searchVisible, setSearchVisible] = useState(false)
@@ -88,7 +88,7 @@ const Header = ({ dark, setDark }) => {
 										transition: '0.5s'
 									}}
 								>
-									<IoBag /> 0
+									<IoBag/> 0
 								</NavLink>
 							</div>
 							<div className="dark-mode">

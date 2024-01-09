@@ -6,13 +6,20 @@ import Horse from '../../assets/img/horse.png'
 import HarryPotter from '../../assets/img/harryPotter.png'
 import Subtle from '../../assets/img/subtle.png'
 
-const Cart = () => {
+const Cart = ({ dark }) => {
+
+	console.log("hi it is dark  " + dark)
 	return (
 		<>
 			<div className="container">
 				<div className="cart">
 					<div className="cartItems">
-						<h1 className={'cartTitle'}>Your cart</h1>
+						<h1
+							style={{ color: dark? 'red' : 'blue' }}
+							className={'cartTitle'}
+						>
+							Your cart
+						</h1>
 
 						{
 							// here when you press the link you should to go to all books
@@ -64,17 +71,14 @@ const Cart = () => {
 
 									<div className="total">
 										<p>Total</p>
-										<p className={"totalCost"}>$188</p>
+										<p className={'totalCost'}>$188</p>
 									</div>
 								</div>
 
-								<button className={"checkoutBtn"}>Continue to checkout</button>
+								<button className={'checkoutBtn'}>Continue to checkout</button>
 							</div>
 						</div>
-
-
 					</div>
-
 				</div>
 			</div>
 		</>

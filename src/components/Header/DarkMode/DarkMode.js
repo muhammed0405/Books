@@ -11,7 +11,7 @@ const DarkMode = ({setDark , dark}) => {
                 type='checkbox'
                 id='darkmode-toggle'
             />
-            <label className='dark_mode_label' for='darkmode-toggle'  onClick={()=> setDark(!dark)}>
+            <label className='dark_mode_label' htmlFor={'darkmode-toggle'}  onClick={()=> setDark(!dark)}>
                 <Sun />
                 <Moon />
             </label>
