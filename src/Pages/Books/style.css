@@ -1,0 +1,93 @@
+.Container{
+    width: 100%;
+    font-family: 'Lucida Sans';
+    line-height: 40px;
+}
+
+
+
+.Books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+    margin: 50px 10px;
+}
+
+.booksTitle{
+    padding-top: 3%;
+    padding-left: 13.5%;
+}
+
+.BookTypes{
+display: flex;
+width: 35%;
+padding-left: 8%;
+height: 530px;
+}
+
+.BooksWords{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    justify-content: space-around;
+}
+
+.BooksInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 15%;
+}
+
+.BooksPage{
+    display: flex;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.FiltersBlock{
+  width: 90%;
+  height: 50px;
+  background-color: yellow;
+  margin-top: 5%;
+  display: flex;
+  color: black;
+  border-radius: 30px;
+  justify-content: space-between;
+}
+
+.FiltersBlockLeft{
+    width: 16.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-family: sans-serif;
+    background-color: lime;
+    border-radius: 30px;
+}
+
+
+.FiltersBlockRight{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.FiltersBlockRight button{
+    background: transparent;
+    border: 2px solid aqua;
+    color: aqua;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    height: 40px;
+    width: 115px;
+}
+
+.FiltersButton:hover{
+    background: aqua;
+    color: #222;
+}
