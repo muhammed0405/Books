@@ -4,45 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="i added cart">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_27_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_27_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_40_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_40_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_7_12_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_7_12_PM_[Changes]1/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_7_12_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_11_16_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_11_16_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_6_43_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_6_43_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_7_16_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_7_16_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_9_2024_8_41_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_9_2024_8_41_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/climate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/harryPotter.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/horse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/itWas.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/love.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/newName.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/rest.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/subtle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/towerOfBooks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/AboutUs/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/AboutUs/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Books/BooksUi/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Books/BooksUi/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Books/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/Books/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/NewBooks/newBooksUi/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/NewBooks/newBooksUi/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Home/NewBooks/style.scss" afterDir="false" />
+    <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="here I made a function when you press the image it will transfer to page with detail about this book">
+      <change afterPath="$PROJECT_DIR$/src/Pages/Books/BooksDetail/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Books/BooksDetail/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Books/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Books/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Books/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Books/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/bookData/booksList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bookData/booksList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +27,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -113,6 +85,7 @@
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Muhammet\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;settings.editor.splitter.proportion&quot;: &quot;0.26476577&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -124,6 +97,11 @@
         <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhammet\Desktop\Alll\Programming\Projects\Books\src\components" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -156,7 +134,11 @@
       <workItem from="1704710276260" duration="2306000" />
       <workItem from="1704719318769" duration="713000" />
       <workItem from="1704805751681" duration="2704000" />
-      <workItem from="1704808485257" duration="2759000" />
+      <workItem from="1704808485257" duration="4536000" />
+      <workItem from="1704984347880" duration="1138000" />
+      <workItem from="1704985511006" duration="394000" />
+      <workItem from="1705067234590" duration="6738000" />
+      <workItem from="1705156352931" duration="6051000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -215,7 +197,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/zhoodar" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -230,6 +212,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="i added cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="i added cart" />
+    <MESSAGE value="here I made a function when you press the image it will transfer to page with detail about this book" />
+    <option name="LAST_COMMIT_MESSAGE" value="here I made a function when you press the image it will transfer to page with detail about this book" />
   </component>
 </project>

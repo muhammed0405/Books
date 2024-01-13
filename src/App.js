@@ -6,6 +6,7 @@ import { useState } from 'react'
 import Footer from './components/Footer'
 import Books from './Pages/Books'
 import Cart from "./Pages/Cart";
+import BooksDetail from "./Pages/Books/BooksDetail";
 
 function App() {
 	const [dark, setDark] = useState(false)
@@ -14,8 +15,9 @@ function App() {
 			<Header dark={dark} setDark={setDark} />
 			<Routes>
 				<Route path={'/'} element={<Home dark={dark} />} />
-				<Route path={'/books'} element={<Books />} />
+				<Route path={'/books'} element={<Books  dark={dark}/>} />
 				<Route path={"/cart"} element={<Cart />} dark={dark} />
+				<Route path={"/books_details/:bookId"} element={<BooksDetail dark={dark}/>}/>
 			</Routes>
 			<Footer />
 		</>

@@ -1,0 +1,122 @@
+.bookDetails {
+	width: 900px;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 0;
+    margin: 0 0 0 100px;
+	.bookPhoto {
+		img {
+			width: 300px;
+			height: 450px;
+		}
+	}
+
+	.bookDesc {
+		width: 466px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 32px;
+
+      .title{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        h1 {
+          color: #19272e;
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .likeAndShareIcons{
+          width: 40px;
+          display: flex;
+          justify-content: space-between;
+        }
+
+      }
+
+
+		.author {
+			color: #19272e;
+			font-size: 16px;
+			font-weight: 400;
+		}
+
+		.description {
+			color: #19272e;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 140%; /* 25.2px */
+		}
+
+		.price {
+			color: #818eea;
+			font-size: 24px;
+			font-weight: 400;
+			line-height: 26px; /* 108.333% */
+		}
+
+		.buttons {
+			display: flex;
+			justify-content: space-between;
+			gap: 10px;
+
+			.addToCart {
+				width: 350px;
+				height: 50px;
+				border: 2px solid #818eea;
+				border-radius: 8px;
+				transition: 0.5s;
+				background: #818eea;
+
+				color: #fff;
+				text-align: center;
+
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 22px; /* 137.5% */
+			}
+
+			.addToCart:hover {
+				color: black;
+				background: none;
+			}
+
+			.counter {
+				display: flex;
+				width: 100px;
+				padding: 12px 10px;
+				justify-content: space-between;
+				align-items: center;
+
+				border-radius: 8px;
+				border: 1px solid var(--Main-color, #818eea);
+
+				.subtract {
+					width: 20px;
+					height: 20px;
+					text-align: center;
+					cursor: pointer;
+				}
+
+				.add {
+					width: 20px;
+					height: 20px;
+					text-align: center;
+					cursor: pointer;
+				}
+
+				.currentNum {
+					color: #0d0d0d;
+					text-align: center;
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 26px; /* 144.444% */
+				}
+			}
+		}
+	}
+}
