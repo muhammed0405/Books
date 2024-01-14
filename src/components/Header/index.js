@@ -1,17 +1,21 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import { CiSearch } from 'react-icons/ci'
 import { IoBag } from 'react-icons/io5'
 import './style.scss'
 import DarkMode from './DarkMode/DarkMode'
 
-const Header = ({ dark, setDark }) => {
+const Header = ({ dark, setDark ,countOfBook }) => {
+	const [sum , setSum] = useState(0 )
 	const [searchVisible, setSearchVisible] = useState(false)
-
 	// finish this function
 	const toggleSearch = () => {
 		setSearchVisible(!searchVisible)
 	}
+	useEffect(() => {
+		setSum((prevSum) => prevSum + countOfBook);
+	}, [countOfBook]);
+
 
 	const body = () => {
 		document.body.style.background = dark ? '#222' : 'white'
@@ -88,7 +92,7 @@ const Header = ({ dark, setDark }) => {
 										transition: '0.5s'
 									}}
 								>
-									<IoBag/> 0
+									<IoBag/> {sum}
 								</NavLink>
 							</div>
 							<div className="dark-mode">

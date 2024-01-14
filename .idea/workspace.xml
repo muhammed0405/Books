@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="here I made a function when you press the image it will transfer to page with detail about this book">
-      <change afterPath="$PROJECT_DIR$/src/Pages/Books/BooksDetail/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Books/BooksDetail/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/Books/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_6_43_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_6_43_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_7_16_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_7_16_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Books/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Books/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Books/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Books/BooksDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Books/BooksDetail/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Books/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Books/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/CartUi/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/CartUi/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Cart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Cart/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/bookData/booksList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bookData/booksList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +105,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhammet\Desktop\Alll\Programming\Projects\Books\src\Pages\Cart" />
       <recent name="C:\Users\Muhammet\Desktop\Alll\Programming\Projects\Books\src\components" />
     </key>
   </component>
@@ -138,7 +144,13 @@
       <workItem from="1704984347880" duration="1138000" />
       <workItem from="1704985511006" duration="394000" />
       <workItem from="1705067234590" duration="6738000" />
-      <workItem from="1705156352931" duration="6051000" />
+      <workItem from="1705156352931" duration="6721000" />
+      <workItem from="1705170560490" duration="185000" />
+      <workItem from="1705170760780" duration="562000" />
+      <workItem from="1705201055608" duration="9255000" />
+      <workItem from="1705213788401" duration="593000" />
+      <workItem from="1705228386000" duration="2624000" />
+      <workItem from="1705242383125" duration="891000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -180,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704808817184</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="here I made a function when you press the image it will transfer to page with detail about this book">
+      <option name="closed" value="true" />
+      <created>1705163933526</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705163933526</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -8,15 +8,21 @@ import { RiSubtractFill } from 'react-icons/ri'
 import { FaRegHeart } from 'react-icons/fa'
 import { LuShare2 } from 'react-icons/lu'
 
-const BookDetails = ({ dark }) => {
+const BookDetails = ({ dark ,onSubmit, setCart}) => {
 	const [count, setCount] = useState(1)
+
+	const handleClick = ()=> {
+		setCount(1)
+		onSubmit(count)
+		setCart(selectedBook)
+	}
 
 	const addNum = () => {
 		setCount(count + 1)
 	}
 
 	const subtractNum = () => {
-		setCount((count) => (count > 0 ? count - 1 : count))
+		setCount((count) => (count >1 ? count - 1 : count))
 	}
 
 	const { bookId } = useParams()
@@ -27,6 +33,8 @@ const BookDetails = ({ dark }) => {
 	if (!selectedBook) {
 		return <div>Book not found.</div>
 	}
+
+
 
 	return (
 		<>
@@ -55,17 +63,18 @@ const BookDetails = ({ dark }) => {
 							style={{ color: dark ? 'white' : 'black' }}
 							className={'description'}
 						>
-							{selectedBook.shortDescription}
+							{selectedBook.shortDescription.slice(0,500)}
 						</p>
 
-						<p className={'price'}>{selectedBook.price}</p>
+						<p className={'price'}>$ {selectedBook.price}</p>
 
 						<div className="buttons">
 							<button
+								onClick={handleClick}
 								className={'addToCart'}
 								style={{ color: dark ? 'white' : 'black' }}
 							>
-								Add to Cart{' '}
+								Add to Cart
 							</button>
 
 							<div className="counter">

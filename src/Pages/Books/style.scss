@@ -6,27 +6,26 @@
 		padding-left: 13.5%;
 
 		.FiltersBlock {
-			height: 50px;
-			margin-top: 5%;
-			display: flex;
-			color: black;
 			border-radius: 30px;
+			color: black;
+			display: flex;
+			height: 50px;
 			justify-content: space-between;
-
+			margin-top: 5%;
 			.FiltersBlockLeft {
-				width: 16.5%;
-				display: flex;
-				justify-content: center;
 				align-items: center;
 				background-color: lime;
 				border-radius: 30px;
+				display: flex;
+				justify-content: center;
+				width: 16.5%;
 			}
 
 			.FiltersBlockRight {
-				width: 15%;
-				display: flex;
 				align-items: center;
+				display: flex;
 				justify-content: center;
+				width: 15%;
 
 				.FiltersButton {
 					background: transparent;
@@ -34,8 +33,8 @@
 					border: 1px solid var(--Main-color, #818EEA);
 					color: aqua;
 					cursor: pointer;
-					transition: 1s;
 					height: 40px;
+					transition: 1s;
 					width: 130px;
 
 					&:hover {
@@ -49,29 +48,32 @@
 
 	.BooksPage {
 		display: flex;
-		width: 100%;
 		padding-top: 5%;
+		width: 100%;
 
 
 		.BookTypes {
 			display: flex;
-			width: 20%;
-			padding-left: 8%;
 			height: 530px;
+			padding-left: 8%;
+			width: 20%;
 
 			.BooksInputs {
 				display: flex;
 				flex-direction: column;
-				justify-content: space-around;
 				width: 15%;
+				gap: 24px  0;
+
+				input{
+					height: 10xp;
+				}
 			}
 
 			.BooksWords {
-				line-height: 40px;
 				display: flex;
 				flex-direction: column;
+				gap: 24px 0 ;
 				width: 110%;
-				justify-content: space-around;
 			}
 		}
 	}
@@ -79,17 +81,17 @@
 	.Books {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 25px 0;
 		justify-content: space-around;
 		width: 100%;
-		gap: 25px 0;
         padding: 0 0 30px 0 ;
 
       h4 {
         color: var(--Text-color, #19272e);
         font-size: 16px;
-        width: 150px;
         font-weight: 700;
         transition: 0.5s;
+        width: 150px;
       }
 	}
 }

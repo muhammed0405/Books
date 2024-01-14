@@ -1,56 +1,54 @@
-import React from 'react'
-import './style.scss'
-import { NavLink } from 'react-router-dom'
-import CartUi from './CartUi'
-import Horse from '../../assets/img/horse.png'
-import HarryPotter from '../../assets/img/harryPotter.png'
-import Subtle from '../../assets/img/subtle.png'
+import React from 'react';
+import './style.scss';
+import { NavLink } from 'react-router-dom';
+import bookData from '../../components/bookData/booksList';
 
-const Cart = ({ dark }) => {
+const Cart = ({ dark, cart, setCart }) => {
+	const handleRemoveBook = (bookId) => {
+		// Remove the book with the specified ID from the cart
+		const updatedCart = cart.filter((book) => book.id !== bookId);
+		setCart(updatedCart);
 
-	console.log("hi it is dark  " + dark)
+	};
+
+	console.log(cart)
+
 	return (
 		<>
 			<div className="container">
 				<div className="cart">
 					<div className="cartItems">
-						<h1
-							style={{ color: dark? 'red' : 'blue' }}
-							className={'cartTitle'}
-						>
+						<h1 style={{ color: dark ? 'red' : 'blue' }} className={'cartTitle'}>
 							Your cart
 						</h1>
 
-						{
-							// here when you press the link you should to go to all books
-						}
 						<div className="returnToShop">
 							<p>Not ready to checkout?</p>
 							<NavLink to={'/books'}>Continue Shopping</NavLink>
 						</div>
 						<div className="booksAndPayment">
 							<div className="itemsContainer">
-								<CartUi
-									photo={Horse}
-									name={`THE BOY, THE MOLE, THE FOX AND THE HORSE`}
-									author={'by Charlie Mackesy'}
-									quantity={'Quantity: 1'}
-									cost={'$99'}
-								/>
-								<CartUi
-									photo={Subtle}
-									name={`THE SUBTLE ART OF NOT GIVING A F*CK`}
-									author={'by Mark Manson'}
-									quantity={'Quantity: 1'}
-									cost={'$99'}
-								/>
-								<CartUi
-									photo={HarryPotter}
-									name={'HARRY POTTER'}
-									author={'by J.K. Rowling'}
-									quantity={'Quantity: 1'}
-									cost={'$99'}
-								/>
+								{bookData.bookdata.map((data) => (
+									<div className="cartUi" key={data.id}>
+										<img src={data.thumbnailUrl} alt={'img'} />
+
+										<div className="infoOfBook">
+											<div className="title">
+												<h1>{data.title}</h1>
+												<p className={'author'}>{data.authors[0]}</p>
+											</div>
+
+											<div className="costAndQuantity">
+												<p className={'quantity'}>quantity: 1</p>
+												<p className={'cost'}>$ {data.price}</p>
+											</div>
+										</div>
+
+										<p className={'remove'} onClick={() => handleRemoveBook(bookData.bookdata.id)}>
+											Remove
+										</p>
+									</div>
+								))}
 							</div>
 
 							<div className="orderSummary">
@@ -59,13 +57,11 @@ const Cart = ({ dark }) => {
 								<div className="details">
 									<div className="shipping">
 										<p>Shipping</p>
-
 										<p>Select Method ></p>
 									</div>
 
 									<div className="payment">
 										<p>Payment</p>
-
 										<p>Select Method ></p>
 									</div>
 
@@ -82,7 +78,7 @@ const Cart = ({ dark }) => {
 				</div>
 			</div>
 		</>
-	)
-}
+	);
+};
 
-export default Cart
+export default Cart;
