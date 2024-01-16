@@ -1,46 +1,50 @@
-import React, { useEffect, useState } from 'react';
-import './style.scss';
-import { NavLink } from 'react-router-dom';
-import bookData from '../../components/bookData/booksList';
+import React, { useEffect, useState } from 'react'
+import './style.scss'
+import { NavLink } from 'react-router-dom'
+import bookData from '../../components/bookData/booksList'
 
 const Cart = ({ dark, idOfBook }) => {
-	const [books, setBooks] = useState([]);
+	const [books, setBooks] = useState([])
 
 	const getIdsFromLocalStr = () => {
-		return JSON.parse(localStorage.getItem("bookIds")) || [];
-	};
+		return JSON.parse(localStorage.getItem('bookIds')) || []
+	}
 
 	useEffect(() => {
-		let arrayOfBook = bookData.bookdata.filter((el) => getIdsFromLocalStr().includes(el.id));
+		let arrayOfBook = bookData.bookdata.filter((el) =>
+			getIdsFromLocalStr().includes(el.id)
+		)
 
-		setBooks(arrayOfBook);
+		setBooks(arrayOfBook)
 
-		const existingIds = getIdsFromLocalStr();
+		const existingIds = getIdsFromLocalStr()
 
 		if (!existingIds.includes(idOfBook)) {
-			existingIds.push(idOfBook);
-			localStorage.setItem("bookIds", JSON.stringify(existingIds));
+			existingIds.push(idOfBook)
+			localStorage.setItem('bookIds', JSON.stringify(existingIds))
 		}
-	}, [idOfBook]);
+	}, [idOfBook])
 
 	const removeBookFromCart = (book) => {
-		console.log(book, "this is remove button");
+		console.log(book, 'this is remove button')
 
-		const existingIds = getIdsFromLocalStr();
+		const existingIds = getIdsFromLocalStr()
 
-		const updatedIds = existingIds.filter((id) => id !== book.id);
-		localStorage.setItem("bookIds", JSON.stringify(updatedIds));
+		const updatedIds = existingIds.filter((id) => id !== book.id)
+		localStorage.setItem('bookIds', JSON.stringify(updatedIds))
 
-		setBooks((prevBooks) => prevBooks.filter((b) => b.id !== book.id));
-	};
-
+		setBooks((prevBooks) => prevBooks.filter((b) => b.id !== book.id))
+	}
 
 	return (
 		<>
 			<div className="container">
 				<div className="cart">
 					<div className="cartItems">
-						<h1 style={{ color: dark ? 'red' : 'blue' }} className={'cartTitle'}>
+						<h1
+							style={{ color: dark ? 'red' : 'blue' }}
+							className={'cartTitle'}
+						>
 							Your cart
 						</h1>
 
@@ -66,7 +70,10 @@ const Cart = ({ dark, idOfBook }) => {
 											</div>
 										</div>
 
-										<p className={'remove'} onClick={() => removeBookFromCart(data)}>
+										<p
+											className={'remove'}
+											onClick={() => removeBookFromCart(data)}
+										>
 											Remove
 										</p>
 									</div>
@@ -100,7 +107,7 @@ const Cart = ({ dark, idOfBook }) => {
 				</div>
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default Cart;
+export default Cart

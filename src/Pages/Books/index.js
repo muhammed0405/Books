@@ -5,10 +5,18 @@ import { IoIosArrowDown } from 'react-icons/io'
 
 const Books = ({ dark }) => {
 	const bookData = require('../../components/bookData/booksList')
-	const [checkboxes, setCheckboxes] = useState(Array(12).fill(false))
+	const [checkboxes, setCheckboxes] = useState(Array(11).fill(false))
 
 	const handleClearFilters = () => {
 		setCheckboxes(Array(12).fill(false))
+	}
+
+	const handleCheckboxChange = (index) => {
+		setCheckboxes((prev) => [
+			...prev.slice(0, index),
+			!prev[index],
+			...prev.slice(index + 1)
+		])
 	}
 
 	return (
@@ -40,18 +48,13 @@ const Books = ({ dark }) => {
 					>
 						<div className="BooksInputs">
 							{checkboxes.map((isChecked, index) => (
-								<input
-									key={index}
-									type="checkbox"
-									checked={isChecked}
-									onChange={() =>
-										setCheckboxes((prev) => [
-											...prev.slice(0, index),
-											!prev[index],
-											...prev.slice(index + 1)
-										])
-									}
-								/>
+								<div key={index}>
+									<input
+										type="checkbox"
+										checked={isChecked}
+										onChange={() => handleCheckboxChange(index)}
+									/>
+								</div>
 							))}
 						</div>
 						<div className="BooksWords">
@@ -62,13 +65,14 @@ const Books = ({ dark }) => {
 							<p>Finance</p>
 							<p>Romantic</p>
 							<p>Psychology</p>
-							<p style={{ width: '200px' }}>Self-Improvement</p>
+							<p style={{width: '200px'}}>Self-Improvement</p>
 							<p>Educational</p>
 							<p>Literature</p>
 							<p>Religion</p>
 						</div>
 					</div>
 				</div>
+
 				<div className="Books">
 					{bookData.bookdata.map((book, index) => (
 						<div key={index}>
