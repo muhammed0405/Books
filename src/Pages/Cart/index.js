@@ -1,17 +1,48 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.scss';
 import { NavLink } from 'react-router-dom';
 import bookData from '../../components/bookData/booksList';
 
-const Cart = ({ dark, cart, setCart }) => {
-	const handleRemoveBook = (bookId) => {
-		// Remove the book with the specified ID from the cart
-		const updatedCart = cart.filter((book) => book.id !== bookId);
-		setCart(updatedCart);
+const Cart = ({ dark, idOfBook }) => {
+	const [books, setBooks] = useState([]);
 
+	const getIdsFromLocalStr = () => {
+		return JSON.parse(localStorage.getItem("bookIds")) || [];
 	};
 
-	console.log(cart)
+	// Filter the bookData directly in the useEffect
+	useEffect(() => {
+		// Declare arrayOfBook using let
+		let arrayOfBook = bookData.bookdata.filter((el) => getIdsFromLocalStr().includes(el.id));
+
+		// Set the state with the filtered array
+		setBooks(arrayOfBook);
+
+		// Store idOfBook in localStorage if not already present
+		const existingIds = getIdsFromLocalStr();
+
+		if (!existingIds.includes(idOfBook)) {
+			existingIds.push(idOfBook);
+			localStorage.setItem("bookIds", JSON.stringify(existingIds));
+		}
+	}, [idOfBook]);
+
+	const removeBookFromCart = (book) => {
+		console.log(book, "this is remove button");
+
+		// Get the current stored IDs
+		const existingIds = getIdsFromLocalStr();
+
+		// Remove the specific book ID from the array
+		const updatedIds = existingIds.filter((id) => id !== book.id);
+
+		// Update localStorage with the new array of IDs
+		localStorage.setItem("bookIds", JSON.stringify(updatedIds));
+
+		// Update the state to reflect the changes
+		setBooks((prevBooks) => prevBooks.filter((b) => b.id !== book.id));
+	};
+
 
 	return (
 		<>
@@ -28,7 +59,7 @@ const Cart = ({ dark, cart, setCart }) => {
 						</div>
 						<div className="booksAndPayment">
 							<div className="itemsContainer">
-								{bookData.bookdata.map((data) => (
+								{books.map((data) => (
 									<div className="cartUi" key={data.id}>
 										<img src={data.thumbnailUrl} alt={'img'} />
 
@@ -44,7 +75,7 @@ const Cart = ({ dark, cart, setCart }) => {
 											</div>
 										</div>
 
-										<p className={'remove'} onClick={() => handleRemoveBook(bookData.bookdata.id)}>
+										<p className={'remove'} onClick={() => removeBookFromCart(data)}>
 											Remove
 										</p>
 									</div>

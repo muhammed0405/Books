@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="here I made a function when you press the image it will transfer to page with detail about this book">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_6_43_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_6_43_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_7_16_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_7_16_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_27_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_27_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_40_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_1_7_2024_11_40_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_11_16_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_7_2024_11_16_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Books/BooksDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Books/BooksDetail/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Books/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Books/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/CartUi/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/CartUi/style.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Cart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Cart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Cart/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bookData/booksList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bookData/booksList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +147,9 @@
       <workItem from="1705213788401" duration="593000" />
       <workItem from="1705228386000" duration="2624000" />
       <workItem from="1705242383125" duration="891000" />
+      <workItem from="1705248513122" duration="120000" />
+      <workItem from="1705331602381" duration="830000" />
+      <workItem from="1705410445903" duration="5540000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -200,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705163933526</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="here I made a function when you press the image it will transfer to page with detail about this book">
+      <option name="closed" value="true" />
+      <created>1705248617591</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705248617591</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,5 +1,5 @@
 // BookDetails.js
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import './style.scss'
 import { useParams } from 'react-router-dom'
 import bookData from '../../../components/bookData/booksList'
@@ -8,14 +8,13 @@ import { RiSubtractFill } from 'react-icons/ri'
 import { FaRegHeart } from 'react-icons/fa'
 import { LuShare2 } from 'react-icons/lu'
 
-const BookDetails = ({ dark ,onSubmit, setCart}) => {
+const BookDetails = ({ dark ,onSubmit,setIdOfBook}) => {
 	const [count, setCount] = useState(1)
 
-	const handleClick = ()=> {
-		setCount(1)
-		onSubmit(count)
-		setCart(selectedBook)
-	}
+
+
+
+
 
 	const addNum = () => {
 		setCount(count + 1)
@@ -35,6 +34,17 @@ const BookDetails = ({ dark ,onSubmit, setCart}) => {
 	}
 
 
+	const handleClick = ()=> {
+		setCount(1)
+		onSubmit(count)
+		console.log(selectedBook.id)
+		setIdOfBook(selectedBook.id)
+	}
+
+	// eslint-disable-next-line react-hooks/rules-of-hooks
+	useEffect(() => {
+
+	}, []);
 
 	return (
 		<>
