@@ -10,15 +10,11 @@ const Cart = ({ dark, idOfBook }) => {
 		return JSON.parse(localStorage.getItem("bookIds")) || [];
 	};
 
-	// Filter the bookData directly in the useEffect
 	useEffect(() => {
-		// Declare arrayOfBook using let
 		let arrayOfBook = bookData.bookdata.filter((el) => getIdsFromLocalStr().includes(el.id));
 
-		// Set the state with the filtered array
 		setBooks(arrayOfBook);
 
-		// Store idOfBook in localStorage if not already present
 		const existingIds = getIdsFromLocalStr();
 
 		if (!existingIds.includes(idOfBook)) {
@@ -30,16 +26,11 @@ const Cart = ({ dark, idOfBook }) => {
 	const removeBookFromCart = (book) => {
 		console.log(book, "this is remove button");
 
-		// Get the current stored IDs
 		const existingIds = getIdsFromLocalStr();
 
-		// Remove the specific book ID from the array
 		const updatedIds = existingIds.filter((id) => id !== book.id);
-
-		// Update localStorage with the new array of IDs
 		localStorage.setItem("bookIds", JSON.stringify(updatedIds));
 
-		// Update the state to reflect the changes
 		setBooks((prevBooks) => prevBooks.filter((b) => b.id !== book.id));
 	};
 
