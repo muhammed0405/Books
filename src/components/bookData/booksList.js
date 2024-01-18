@@ -15,7 +15,8 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['W. Frank Ableson', 'Charlie Collins', 'Robi Sen'],
 			categories: ['Open Source', 'Mobile'],
-			price: 99
+			price: 99,
+			quantity: 1,
 		},
 		{
 			id: 1,
@@ -32,7 +33,8 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['W. Frank Ableson', 'Robi Sen'],
 			categories: ['Java'],
-			price: 120
+			price: 120,
+			quantity: 1,
 		},
 		{
 			id: 2,
@@ -47,7 +49,8 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['Gojko Adzic'],
 			categories: ['Software Engineering'],
-			price: 78
+			quantity: 1,
+			price: 78,
 		},
 		{
 			id: 3,
@@ -65,7 +68,8 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['Tariq Ahmed with Jon Hirschi', 'Faisal Abid'],
 			categories: ['Internet'],
-			price: 49
+			quantity: 1,
+			price: 49,
 		},
 		{
 			id: 4,
@@ -80,7 +84,8 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['Tariq Ahmed', 'Dan Orlando', 'John C. Bland II', 'Joel Hooks'],
 			categories: ['Internet'],
-			price: 100
+			quantity: 1,
+			price: 100,
 		},
 		{
 			id: 5,
@@ -95,7 +100,8 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['Satnam Alag'],
 			categories: ['Internet'],
-			price: 157
+			quantity: 1,
+			price: 157,
 		},
 		{
 			id: 6,
@@ -112,6 +118,7 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['Rob Allen', 'Nick Lo', 'Steven Brown'],
 			categories: ['Web Development'],
+			quantity: 1,
 			price: 69
 		},
 		{
@@ -129,6 +136,7 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['Bernerd Allmon', 'Jeremy Anderson'],
 			categories: ['Internet'],
+			quantity: 1,
 			price: 105
 		},
 		{
@@ -146,6 +154,7 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['Andres Almiray', 'Danno Ferrin', '', 'James Shingler'],
 			categories: ['Java'],
+			quantity: 1,
 			price: 204
 		},
 		{
@@ -163,6 +172,7 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['Alexandre de Castro Alves'],
 			categories: ['Java'],
+			quantity: 1,
 			price: 136
 		},
 		{
@@ -178,6 +188,7 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['Peter Armstrong'],
 			categories: ['Web Development'],
+			quantity: 1,
 			price: 199
 		},
 		{
@@ -195,6 +206,7 @@ const bookdata = {
 			status: 'PUBLISH',
 			authors: ['Peter Armstrong'],
 			categories: ['Internet'],
+			quantity: 1,
 			price: 88
 		}
 	]

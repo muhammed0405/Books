@@ -9,7 +9,7 @@ import Cart from "./Pages/Cart";
 import BooksDetail from "./Pages/Books/BooksDetail";
 
 function App() {
-	const [count, setCount] = useState(1);
+	const [count, setCount] = useState(0);
 	const [idOfBook, setIdOfBook] = useState(null)
 
 	const getId = (bookID)=>{
@@ -27,7 +27,7 @@ function App() {
 			<Routes>
 				<Route path={'/'} element={<Home dark={dark} />} />
 				<Route path={'/books'} element={<Books dark={dark} />} />
-				<Route path={"/cart"} element={<Cart idOfBook={idOfBook} />} />
+				<Route path={"/cart"} element={<Cart idOfBook={idOfBook} count={count} />} />
 				<Route path={"/books_details/:bookId"} element={<BooksDetail dark={dark} onSubmit={getData} setIdOfBook={getId}/> } />
 			</Routes>
 			<Footer />

@@ -3,35 +3,54 @@ import './style.scss'
 import { NavLink } from 'react-router-dom'
 import bookData from '../../components/bookData/booksList'
 
-const Cart = ({ dark, idOfBook }) => {
+const Cart = ({ dark }) => {
+
+	// бул жерде сорттолгон китептер сакталган
 	const [books, setBooks] = useState([])
 
+
+	// бул локяльный стордогу китептердин айдисин алат
 	const getIdsFromLocalStr = () => {
 		return JSON.parse(localStorage.getItem('bookIds')) || []
 	}
 
+
+	// бул стордогу китептердин санын алат
+	const getQuantityFromLocalStr = () => {
+		return JSON.parse(localStorage.getItem('quantity')) || {}
+	}
+
+
+
 	useEffect(() => {
+
+		// бул жерде сортолот локальный стордогу айдилерди салыштырып бир гана стордогу китептер калат
 		let arrayOfBook = bookData.bookdata.filter((el) =>
 			getIdsFromLocalStr().includes(el.id)
 		)
 
+
+		// бул обновления кылат
+		arrayOfBook = arrayOfBook.map((book) => ({
+			...book,
+			quantity: getQuantityFromLocalStr()[book.id] || 0
+		}))
+
 		setBooks(arrayOfBook)
-
-		const existingIds = getIdsFromLocalStr()
-
-		if (!existingIds.includes(idOfBook)) {
-			existingIds.push(idOfBook)
-			localStorage.setItem('bookIds', JSON.stringify(existingIds))
-		}
-	}, [idOfBook])
+	}, [])
 
 	const removeBookFromCart = (book) => {
-		console.log(book, 'this is remove button')
-
+		// бул жерде локальный стордогу айдилер бар
 		const existingIds = getIdsFromLocalStr()
+		// бул жерде локальный стордогу китептин саны  бар
+		const existingQuantities = getQuantityFromLocalStr()
 
+		// бул жерде жерде
 		const updatedIds = existingIds.filter((id) => id !== book.id)
+		delete existingQuantities[book.id]
+
 		localStorage.setItem('bookIds', JSON.stringify(updatedIds))
+		localStorage.setItem('quantity', JSON.stringify(existingQuantities))
 
 		setBooks((prevBooks) => prevBooks.filter((b) => b.id !== book.id))
 	}
@@ -65,7 +84,7 @@ const Cart = ({ dark, idOfBook }) => {
 											</div>
 
 											<div className="costAndQuantity">
-												<p className={'quantity'}>quantity: 1</p>
+												<p className={'quantity'}>quantity: {data.quantity}</p>
 												<p className={'cost'}>$ {data.price}</p>
 											</div>
 										</div>
@@ -96,7 +115,14 @@ const Cart = ({ dark, idOfBook }) => {
 
 									<div className="total">
 										<p>Total</p>
-										<p className={'totalCost'}>$188</p>
+										<p className={'totalCost'}>
+											{' '}
+											${' '}
+											{books.reduce(
+												(total, book) => total + book.price * book.quantity,
+												0
+											)}
+										</p>
 									</div>
 								</div>
 
