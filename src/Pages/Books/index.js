@@ -29,6 +29,7 @@ const Books = ({ dark }) => {
 				<div className="FiltersBlock">
 					<div className="FiltersBlockLeft">
 						<h3>Filters</h3>
+						{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
 						<a href={'#'} onClick={handleClearFilters}>
 							Clear filters
 						</a>

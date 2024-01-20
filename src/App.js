@@ -11,6 +11,15 @@ import BooksDetail from "./Pages/Books/BooksDetail";
 function App() {
 	const [count, setCount] = useState(0);
 	const [idOfBook, setIdOfBook] = useState(null)
+	const [updateTotal , setUpdateTotal] = useState(0)
+
+
+
+	const updateTotalQuantity = (update) =>{
+		setUpdateTotal(update)
+	}
+
+	console.log(updateTotal, "this is from App")
 
 	const getId = (bookID)=>{
 		setIdOfBook(bookID)
@@ -23,11 +32,11 @@ function App() {
 	const [dark, setDark] = useState(false);
 	return (
 		<>
-			<Header dark={dark} setDark={setDark} countOfBook={count} />
+			<Header dark={dark} setDark={setDark} countOfBook={count} updateTotal={updateTotal} />
 			<Routes>
 				<Route path={'/'} element={<Home dark={dark} />} />
 				<Route path={'/books'} element={<Books dark={dark} />} />
-				<Route path={"/cart"} element={<Cart idOfBook={idOfBook} count={count} />} />
+				<Route path={"/cart"} element={<Cart idOfBook={idOfBook} count={count} updateTotal={updateTotalQuantity} />} />
 				<Route path={"/books_details/:bookId"} element={<BooksDetail dark={dark} onSubmit={getData} setIdOfBook={getId}/> } />
 			</Routes>
 			<Footer />
