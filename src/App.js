@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Books from './Pages/Books';
 import Cart from "./Pages/Cart";
 import BooksDetail from "./Pages/Books/BooksDetail";
+import AboutUsPage from "./Pages/AboutUsPage";
 
 function App() {
 	const [sum , setSum] = useState(0)
@@ -29,8 +30,9 @@ function App() {
 			<Routes>
 				<Route path={'/'} element={<Home dark={dark} />} />
 				<Route path={'/books'} element={<Books dark={dark} />} />
-				<Route path={"/cart"} element={<Cart idOfBook={idOfBook} getLength={getLength} />} />
+				<Route path={"/cart"} element={<Cart dark={dark} idOfBook={idOfBook} getLength={getLength} />} />
 				<Route path={"/books_details/:bookId"} element={<BooksDetail dark={dark} onSubmit={getLength} setIdOfBook={getId}/> } />
+				<Route path={"/about_us"} element={<AboutUsPage/>}/>
 			</Routes>
 			<Footer />
 		</>

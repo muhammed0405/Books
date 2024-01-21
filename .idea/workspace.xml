@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="here i added books to bookList.js">
+    <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="i fixed problem with count of books">
+      <change afterPath="$PROJECT_DIR$/src/Pages/AboutUsPage/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/AboutUsPage/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Books/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Books/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Cart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Cart/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Cart/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
@@ -157,7 +157,7 @@
       <workItem from="1705767181196" duration="1372000" />
       <workItem from="1705768610146" duration="657000" />
       <workItem from="1705810320255" duration="1143000" />
-      <workItem from="1705814945927" duration="2645000" />
+      <workItem from="1705814945927" duration="8888000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -263,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705768784631</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="i fixed problem with count of books">
+      <option name="closed" value="true" />
+      <created>1705817928260</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705817928260</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +307,7 @@
     <MESSAGE value="here i added function to add books to cart" />
     <MESSAGE value="here i added function to sum quantity of books and find total price" />
     <MESSAGE value="here i added books to bookList.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="here i added books to bookList.js" />
+    <MESSAGE value="i fixed problem with count of books" />
+    <option name="LAST_COMMIT_MESSAGE" value="i fixed problem with count of books" />
   </component>
 </project>

@@ -1,5 +1,5 @@
 // Header.js
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { CiSearch } from 'react-icons/ci'
 import { IoBag } from 'react-icons/io5'
@@ -9,11 +9,9 @@ import DarkMode from './DarkMode/DarkMode'
 const Header = ({ dark, setDark, countOfBook }) => {
 
 	const [searchVisible, setSearchVisible] = useState(false)
-
 	const toggleSearch = () => {
 		setSearchVisible(!searchVisible)
 	}
-
 
 	const body = () => {
 		document.body.style.background = dark ? '#222' : 'white'
