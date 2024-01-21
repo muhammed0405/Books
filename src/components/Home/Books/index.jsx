@@ -1,8 +1,7 @@
 import React from 'react'
 import './style.scss'
 import ItWas from '../../../assets/img/itWas.png'
-import { Link, NavLink } from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 
 const Books = ({ blackColor }) => {
 	const bookData = require('../../../components/bookData/booksList')
@@ -18,15 +17,25 @@ const Books = ({ blackColor }) => {
 					>
 						Books
 					</h1>
-                 <a style={{
-			                position: 'relative',
-							left: '90%',
+					<Link
+						to={'/books'}
+						style={{
+							position: 'relative',
+							left: '93%',
+							bottom: '20px',
 							transition: '0.5s',
-							color: blackColor ? 'white' : 'black;'
-						}} href='/'>View All</a>
+							color: '#818EEA',
+							fontSize: '18px',
+							fontStyle: 'normal',
+							fontWeight: '500',
+							lineHeight: '120%'
+						}}
+					>
+						View All
+					</Link>
 					<div className="booksUiContainer">
-					{bookData.bookdata.slice(0, 5,).map((book, index) => (
-							<div key={index} style={{width: "200px"}}>
+						{bookData.bookdata.slice(0, 5).map((book, index) => (
+							<div key={index} style={{ width: '200px' }}>
 								<Link to={`/books_details/${book.id}`}>
 									{' '}
 									<img
@@ -47,7 +56,7 @@ const Books = ({ blackColor }) => {
 									{book.title}
 								</h4>{' '}
 								<p style={{ color: blackColor ? 'yellow' : 'black' }}>
-								{book.authors["0"]}
+									{book.authors['0']}
 								</p>
 							</div>
 						))}
