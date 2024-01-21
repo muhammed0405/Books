@@ -9,35 +9,28 @@ import Cart from "./Pages/Cart";
 import BooksDetail from "./Pages/Books/BooksDetail";
 
 function App() {
-	const [count, setCount] = useState(0);
-	const [idOfBook, setIdOfBook] = useState(null)
-	const [updateTotal , setUpdateTotal] = useState(0)
+	const [sum , setSum] = useState(0)
+	const [idOfBook, setIdOfBook] = useState(null);
 
 
-
-	const updateTotalQuantity = (update) =>{
-		setUpdateTotal(update)
-	}
-
-	console.log(updateTotal, "this is from App")
 
 	const getId = (bookID)=>{
 		setIdOfBook(bookID)
 	}
 
-	const getData = (data) => {
-		setCount(data);
+	const getLength = (length) => {
+		setSum(length);
 	};
 
 	const [dark, setDark] = useState(false);
 	return (
 		<>
-			<Header dark={dark} setDark={setDark} countOfBook={count} updateTotal={updateTotal} />
+			<Header dark={dark} setDark={setDark} countOfBook={sum}  />
 			<Routes>
 				<Route path={'/'} element={<Home dark={dark} />} />
 				<Route path={'/books'} element={<Books dark={dark} />} />
-				<Route path={"/cart"} element={<Cart idOfBook={idOfBook} count={count} updateTotal={updateTotalQuantity} />} />
-				<Route path={"/books_details/:bookId"} element={<BooksDetail dark={dark} onSubmit={getData} setIdOfBook={getId}/> } />
+				<Route path={"/cart"} element={<Cart idOfBook={idOfBook} getLength={getLength} />} />
+				<Route path={"/books_details/:bookId"} element={<BooksDetail dark={dark} onSubmit={getLength} setIdOfBook={getId}/> } />
 			</Routes>
 			<Footer />
 		</>

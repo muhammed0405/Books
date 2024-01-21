@@ -1,70 +1,26 @@
 // Header.js
-import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import { CiSearch } from 'react-icons/ci';
-import { IoBag } from 'react-icons/io5';
-import './style.scss';
-import DarkMode from './DarkMode/DarkMode';
+import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
+import { CiSearch } from 'react-icons/ci'
+import { IoBag } from 'react-icons/io5'
+import './style.scss'
+import DarkMode from './DarkMode/DarkMode'
 
-const Header = ({ dark, setDark, countOfBook,updateTotal}) => {
-	const allQuantity = localStorage.getItem("quantity")
-	console.log(allQuantity)
+const Header = ({ dark, setDark, countOfBook }) => {
 
-	// бул жерде корзинкадагы китептердин саны
-	const [sum, setSum] = useState(0);
-
-	const [searchVisible, setSearchVisible] = useState(false);
+	const [searchVisible, setSearchVisible] = useState(false)
 
 	const toggleSearch = () => {
-		setSearchVisible(!searchVisible);
-	};
+		setSearchVisible(!searchVisible)
+	}
 
-	// бул локалный стордон китептердин санын алат
-	const getQuantities = () => {
-		return JSON.parse(localStorage.getItem('quantity')) || {};
-	};
-
-
-
-	useEffect(() => {
-		// бул константта китептин санын алган функцияны чакырат жана озуно сандарды сактайт
-		const existingQuantities = getQuantities();
-
-		// бул жерде локальный стор тактап айтканда quantity деген
-		// файлдын значенияларын бир бирине кошот
-		const totalQuantity = Object.values(existingQuantities).reduce(
-			(acc, el) => acc + el,
-			0
-		);
-
-		// бул жалпы китептин санын sum деген стейтке жонотот
-		setSum(totalQuantity);
-	}, [countOfBook]);
-
-
-	useEffect(() => {
-		// бул константта китептин санын алган функцияны чакырат жана озуно сандарды сактайт
-		const existingQuantities = getQuantities();
-
-		// бул жерде локальный стор тактап айтканда quantity деген
-		// файлдын значенияларын бир бирине кошот
-		const totalQuantity = Object.values(existingQuantities).reduce(
-			(acc, el) => acc + el,
-			0
-		);
-
-		// бул жалпы китептин санын sum деген стейтке жонотот
-		setSum(totalQuantity);
-	}, [updateTotal]);
-
-	console.log(updateTotal, "this is from header")
 
 	const body = () => {
-		document.body.style.background = dark ? '#222' : 'white';
-		document.body.style.transition = '1s';
-	};
+		document.body.style.background = dark ? '#222' : 'white'
+		document.body.style.transition = '1s'
+	}
 
-	body();
+	body()
 
 	return (
 		<>
@@ -120,7 +76,7 @@ const Header = ({ dark, setDark, countOfBook,updateTotal}) => {
 									type="search"
 									placeholder="Search books"
 									style={{
-										border: dark ? '1px solid white' : '1px solid black',
+										border: dark ? '1px solid white' : '1px solid black'
 									}}
 								/>
 							</div>
@@ -132,10 +88,10 @@ const Header = ({ dark, setDark, countOfBook,updateTotal}) => {
 									to={'/cart'}
 									style={{
 										color: dark ? 'white' : 'black',
-										transition: '0.5s',
+										transition: '0.5s'
 									}}
 								>
-									<IoBag /> {sum}
+									<IoBag /> {countOfBook}
 								</NavLink>
 							</div>
 							<div className="dark-mode">
@@ -146,7 +102,7 @@ const Header = ({ dark, setDark, countOfBook,updateTotal}) => {
 				</div>
 			</div>
 		</>
-	);
-};
+	)
+}
 
-export default Header;
+export default Header

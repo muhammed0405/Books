@@ -8,7 +8,7 @@ const Books = ({ dark }) => {
 	const [checkboxes, setCheckboxes] = useState(Array(11).fill(false))
 
 	const handleClearFilters = () => {
-		setCheckboxes(Array(12).fill(false))
+		setCheckboxes(Array(11).fill(false))
 	}
 
 	const handleCheckboxChange = (index) => {
@@ -81,6 +81,7 @@ const Books = ({ dark }) => {
 								<img
 									style={{
 										width: '180px',
+										height: '270px',
 										fontSize: 'cover',
 										borderRadius: '8px'
 									}}

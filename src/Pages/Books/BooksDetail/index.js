@@ -1,5 +1,5 @@
 // BookDetails.js
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import './style.scss';
 import { useParams } from 'react-router-dom';
 import bookData from '../../../components/bookData/booksList';
@@ -30,7 +30,7 @@ const BookDetails = ({ dark, onSubmit, setIdOfBook }) => {
 	}
 
 	const handleClick = () => {
-		onSubmit(count); // Assuming onSubmit updates the total count
+		// Assuming onSubmit updates the total count
 		setIdOfBook(selectedBook.id);
 
 		let existingQuantities = JSON.parse(localStorage.getItem('quantity'));
@@ -47,6 +47,7 @@ const BookDetails = ({ dark, onSubmit, setIdOfBook }) => {
 			existingIds.push(selectedBook.id);
 			localStorage.setItem('bookIds', JSON.stringify(existingIds));
 		}
+		onSubmit(existingIds.length);
 	};
 
 	return (

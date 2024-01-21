@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="here i added function to sum quantity of books and find total price">
+    <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="here i added books to bookList.js">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Books/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Books/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Cart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Cart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Cart/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/bookData/booksList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bookData/booksList.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +153,11 @@
       <workItem from="1705503702822" duration="3359000" />
       <workItem from="1705584047657" duration="9343000" />
       <workItem from="1705676380676" duration="3951000" />
-      <workItem from="1705754725478" duration="3138000" />
+      <workItem from="1705754725478" duration="4893000" />
+      <workItem from="1705767181196" duration="1372000" />
+      <workItem from="1705768610146" duration="657000" />
+      <workItem from="1705810320255" duration="1143000" />
+      <workItem from="1705814945927" duration="2645000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -240,7 +247,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705593848963</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="here i added books to bookList.js">
+      <option name="closed" value="true" />
+      <created>1705762962761</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1705762962761</updated>
+    </task>
+    <task id="LOCAL-00013" summary="here i added books to bookList.js">
+      <option name="closed" value="true" />
+      <created>1705768784631</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705768784631</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +298,7 @@
     <MESSAGE value="here I made a function when you press the image it will transfer to page with detail about this book" />
     <MESSAGE value="here i added function to add books to cart" />
     <MESSAGE value="here i added function to sum quantity of books and find total price" />
-    <option name="LAST_COMMIT_MESSAGE" value="here i added function to sum quantity of books and find total price" />
+    <MESSAGE value="here i added books to bookList.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="here i added books to bookList.js" />
   </component>
 </project>

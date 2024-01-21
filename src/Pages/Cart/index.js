@@ -3,7 +3,7 @@ import './style.scss'
 import { NavLink } from 'react-router-dom'
 import bookData from '../../components/bookData/booksList'
 
-const Cart = ({ dark, updateTotal }) => {
+const Cart = ({ dark, getLength}) => {
 
 	// бул жерде сорттолгон китептер сакталган
 	const [books, setBooks] = useState([]);
@@ -54,25 +54,8 @@ const Cart = ({ dark, updateTotal }) => {
 		localStorage.setItem('quantity', JSON.stringify(existingQuantities))
 
 		setBooks((prevBooks) => prevBooks.filter((b) => b.id !== book.id))
-
-
-		// бул жерде локальный стор тактап айтканда quantity деген
-		// файлдын значенияларын бир бирине кошот
-		const totalQuantity = Object.values(existingQuantities).reduce(
-			(acc, el) => acc + el,
-			0
-		);
-
-		// бул жалпы китептин санын sum деген стейтке жонотот
-		updateTotal(totalQuantity)
-
-		console.log(totalQuantity)
+		getLength(updatedIds.length)
 	}
-
-
-
-
-
 
 	return (
 		<>
