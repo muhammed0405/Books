@@ -22,6 +22,7 @@ const bookdata = {
 			authors: ['by Rick Rubin with Neil Strauss'],
 			thumbnailUrl: "https://m.media-amazon.com/images/I/71dUSlTVOwL._AC_UF1000,1000_QL80_.jpg",
 			shortDescription: "Hello! Flex 4 progresses through 26 self-contained examples selected so you can progressively master Flex. They vary from small one-page apps, to a 3D rotating haiku, to a Connect Four-like game. And in the last chapter you'll learn to build a full Flex application called SocialStalkr   a mashup that lets you follow your friends by showing their tweets on a Yahoo map.",
+			price: 93,
 		},
 		{
 			id: 15,
@@ -29,6 +30,7 @@ const bookdata = {
 			authors: ['by Charlie Mackesy'],
 			thumbnailUrl: "https://m.media-amazon.com/images/I/81PdkxXJObL._AC_UF1000,1000_QL80_.jpg",
 			shortDescription: "Hello! Flex 4 progresses through 26 self-contained examples selected so you can progressively master Flex. They vary from small one-page apps, to a 3D rotating haiku, to a Connect Four-like game. And in the last chapter you'll learn to build a full Flex application called SocialStalkr   a mashup that lets you follow your friends by showing their tweets on a Yahoo map.",
+			price: 67,
 		},
 		{
 			id: 15,
@@ -36,6 +38,7 @@ const bookdata = {
 			authors: ['by J.K. Rowling'],
 			thumbnailUrl: "https://m.media-amazon.com/images/I/71RVt35ZAbL._AC_UF1000,1000_QL80_.jpg",
 			shortDescription: "Hello! Flex 4 progresses through 26 self-contained examples selected so you can progressively master Flex. They vary from small one-page apps, to a 3D rotating haiku, to a Connect Four-like game. And in the last chapter you'll learn to build a full Flex application called SocialStalkr   a mashup that lets you follow your friends by showing their tweets on a Yahoo map.",
+			price: 60,
 		},
 		{
 			id: 16,
@@ -43,6 +46,7 @@ const bookdata = {
 			authors: ['by Greta Thunberg'],
 			thumbnailUrl: "https://m.media-amazon.com/images/I/811HZRZ3i8L._AC_UF1000,1000_QL80_.jpg",
 			shortDescription: "Hello! Flex 4 progresses through 26 self-contained examples selected so you can progressively master Flex. They vary from small one-page apps, to a 3D rotating haiku, to a Connect Four-like game. And in the last chapter you'll learn to build a full Flex application called SocialStalkr   a mashup that lets you follow your friends by showing their tweets on a Yahoo map.",
+			price: 78,
 		},
 		{
 			id: 17,
@@ -50,6 +54,7 @@ const bookdata = {
 			authors: ['by Tricia Hersey'],
 			thumbnailUrl: "https://m.media-amazon.com/images/I/81-rWvLyz2L._AC_UF1000,1000_QL80_.jpg",
 			shortDescription: "Hello! Flex 4 progresses through 26 self-contained examples selected so you can progressively master Flex. They vary from small one-page apps, to a 3D rotating haiku, to a Connect Four-like game. And in the last chapter you'll learn to build a full Flex application called SocialStalkr   a mashup that lets you follow your friends by showing their tweets on a Yahoo map.",
+			price: 102,
 		},
 		{
 			id: 18,
@@ -57,6 +62,7 @@ const bookdata = {
 			authors: ['by Jon Fosse'],
 			thumbnailUrl: "https://m.media-amazon.com/images/I/41rTunpcCSL.jpg",
             shortDescription: "Hello! Flex 4 progresses through 26 self-contained examples selected so you can progressively master Flex. They vary from small one-page apps, to a 3D rotating haiku, to a Connect Four-like game. And in the last chapter you'll learn to build a full Flex application called SocialStalkr   a mashup that lets you follow your friends by showing their tweets on a Yahoo map.",
+			price: 92,
 		},
 
 		{

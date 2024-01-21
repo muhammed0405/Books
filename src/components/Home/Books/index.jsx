@@ -1,14 +1,12 @@
 import React from 'react'
 import './style.scss'
-import BooksUi from './BooksUi'
-import Subtle from '../../../assets/img/subtle.png'
-import Love from '../../../assets/img/love.png'
-import Circle from '../../../assets/img/circle.png'
-import Horse from '../../../assets/img/horse.png'
-import HarryPotter from '../../../assets/img/harryPotter.png'
 import ItWas from '../../../assets/img/itWas.png'
+import { Link, NavLink } from 'react-router-dom'
+import AllBooks from '../../../Pages/Books/BooksDetail'
+
 
 const Books = ({ blackColor }) => {
+	const bookData = require('../../../components/bookData/booksList')
 	return (
 		<div>
 			<div className="container">
@@ -21,38 +19,39 @@ const Books = ({ blackColor }) => {
 					>
 						Books
 					</h1>
-
+                 <a style={{
+			                position: 'relative',
+							left: '90%',
+							transition: '0.5s',
+							color: blackColor ? 'white' : 'black;'
+						}} href='/'>View All</a>
 					<div className="booksUiContainer">
-						<BooksUi
-							blackColor={blackColor}
-							photo={Subtle}
-							title={'THE SUBTLE ART OF NOT GIVING A F*CK'}
-							description={'by Mark Manson'}
-						/>
-						<BooksUi
-							blackColor={blackColor}
-							photo={Love}
-							title={'8 RULES OF LOVE'}
-							description={'by Jay Shetty'}
-						/>
-						<BooksUi
-							blackColor={blackColor}
-							photo={Circle}
-							title={'THE CREATIVE ACT'}
-							description={'by Rick Rubin with Neil Strauss'}
-						/>
-						<BooksUi
-							blackColor={blackColor}
-							photo={Horse}
-							title={'THE BOY, THE MOLE, THE FOX AND THE HORSE'}
-							description={'by Charlie Mackesy'}
-						/>
-						<BooksUi
-							blackColor={blackColor}
-							photo={HarryPotter}
-							title={'HARRY POTTER'}
-							description={'by J.K. Rowling'}
-						/>
+					{bookData.bookdata.slice(0, 5,).map((book, index) => (
+							<div key={index} style={{width: "200px"}}>
+								<Link to={`/books_details/${book.id}`}>
+									{' '}
+									<img
+										style={{
+											width: '180px',
+											fontSize: 'cover',
+											borderRadius: '8px'
+										}}
+										src={book.thumbnailUrl}
+										alt={`img-${index}`}
+									/>
+								</Link>{' '}
+								<h4
+									style={{ color: blackColor ? 'white' : 'black' }}
+									className={'imageTitle'}
+								>
+									{' '}
+									{book.title}
+								</h4>{' '}
+								<p style={{ color: blackColor ? 'yellow' : 'black' }}>
+								{book.authors["0"]}
+								</p>
+							</div>
+						))}
 						<div className="halfImage">
 							<img src={ItWas} alt="" />
 						</div>
