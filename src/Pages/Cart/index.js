@@ -3,7 +3,7 @@ import './style.scss'
 import { NavLink} from 'react-router-dom'
 import bookData from '../../components/bookData/booksList'
 
-const Cart = ({ dark, getLength }) => {
+const Cart = ({ dark }) => {
 	// бул жерде сорттолгон китептер сакталган
 	const [books, setBooks] = useState([])
 
@@ -40,10 +40,10 @@ const Cart = ({ dark, getLength }) => {
 		delete existingQuantities[book.id]
 
 		localStorage.setItem('bookIds', JSON.stringify(updatedIds))
-		localStorage.setItem('quantity', JSON.stringify(existingQuantities))
+
 
 		setBooks((prevBooks) => prevBooks.filter((b) => b.id !== book.id))
-		getLength(updatedIds.length)
+		localStorage.setItem('length', JSON.stringify(updatedIds.length))
 	}
 
 	return (

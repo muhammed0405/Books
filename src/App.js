@@ -10,28 +10,20 @@ import BooksDetail from "./Pages/Books/BooksDetail";
 import AboutUsPage from "./Pages/AboutUsPage";
 
 function App() {
-	const [sum , setSum] = useState(0)
 	const [idOfBook, setIdOfBook] = useState(null);
-
-
-
 	const getId = (bookID)=>{
 		setIdOfBook(bookID)
 	}
 
-	const getLength = (length) => {
-		setSum(length);
-	};
-
 	const [dark, setDark] = useState(false);
 	return (
 		<>
-			<Header dark={dark} setDark={setDark} countOfBook={sum}  />
+			<Header dark={dark} setDark={setDark} />
 			<Routes>
 				<Route path={'/'} element={<Home dark={dark} />} />
 				<Route path={'/books'} element={<Books dark={dark} />} />
-				<Route path={"/cart"} element={<Cart dark={dark} idOfBook={idOfBook} getLength={getLength} />} />
-				<Route path={"/books_details/:bookId"} element={<BooksDetail dark={dark} onSubmit={getLength} setIdOfBook={getId}/> } />
+				<Route path={"/cart"} element={<Cart dark={dark} idOfBook={idOfBook}  />} />
+				<Route path={"/books_details/:bookId"} element={<BooksDetail dark={dark} setIdOfBook={getId}/> } />
 				<Route path={"/about_us"} element={<AboutUsPage/>}/>
 			</Routes>
 			<Footer />

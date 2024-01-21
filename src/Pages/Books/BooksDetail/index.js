@@ -8,7 +8,7 @@ import { RiSubtractFill } from 'react-icons/ri';
 import { FaRegHeart } from 'react-icons/fa';
 import { LuShare2 } from 'react-icons/lu';
 
-const BookDetails = ({ dark, onSubmit, setIdOfBook }) => {
+const BookDetails = ({ dark,  setIdOfBook }) => {
 
 	const [count, setCount] = useState(1);
 
@@ -47,7 +47,7 @@ const BookDetails = ({ dark, onSubmit, setIdOfBook }) => {
 			existingIds.push(selectedBook.id);
 			localStorage.setItem('bookIds', JSON.stringify(existingIds));
 		}
-		onSubmit(existingIds.length);
+		localStorage.setItem('length', JSON.stringify(existingIds.length));
 	};
 
 	return (

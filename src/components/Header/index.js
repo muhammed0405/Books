@@ -1,14 +1,16 @@
 // Header.js
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import { CiSearch } from 'react-icons/ci'
 import { IoBag } from 'react-icons/io5'
 import './style.scss'
 import DarkMode from './DarkMode/DarkMode'
 
-const Header = ({ dark, setDark, countOfBook }) => {
+const Header = ({ dark, setDark}) => {
 
-	const [searchVisible, setSearchVisible] = useState(false)
+	const  countOfBook = localStorage.getItem("length")
+
+	const [searchVisible, setSearchVisible] = useState(false);
 	const toggleSearch = () => {
 		setSearchVisible(!searchVisible)
 	}
