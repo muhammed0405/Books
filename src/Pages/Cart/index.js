@@ -124,12 +124,12 @@ const Cart = ({ dark, updateTotal }) => {
 								<div className="details">
 									<div className="shipping">
 										<p>Shipping</p>
-										<p>Select Method ></p>
+										<p>Select Method </p>
 									</div>
 
 									<div className="payment">
 										<p>Payment</p>
-										<p>Select Method ></p>
+										<p>Select Method</p>
 									</div>
 
 									<div className="total">
