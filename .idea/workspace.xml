@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="my final push">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Cart/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +149,7 @@
       <workItem from="1705767181196" duration="1372000" />
       <workItem from="1705768610146" duration="657000" />
       <workItem from="1705810320255" duration="1143000" />
-      <workItem from="1705814945927" duration="11751000" />
+      <workItem from="1705814945927" duration="12060000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -288,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705827854579</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="my final push">
+      <option name="closed" value="true" />
+      <created>1705828862278</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1705828862278</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

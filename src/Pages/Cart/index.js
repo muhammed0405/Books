@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './style.scss'
-import { NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import bookData from '../../components/bookData/booksList'
 
 const Cart = ({ dark }) => {
@@ -31,18 +31,19 @@ const Cart = ({ dark }) => {
 		setBooks(arrayOfBook)
 	}, [])
 	const removeBookFromCart = (book) => {
-		// бул жерде локальный стордогу айдилер бар
 		const existingIds = getIdsFromLocalStr()
-		// бул жерде локальный стордогу китептин саны  бар
+
 		const existingQuantities = getQuantityFromLocalStr()
-		// бул жерде жерде
+
 		const updatedIds = existingIds.filter((id) => id !== book.id)
+
 		delete existingQuantities[book.id]
 
 		localStorage.setItem('bookIds', JSON.stringify(updatedIds))
-
+		localStorage.setItem('quantity', JSON.stringify(existingQuantities))
 
 		setBooks((prevBooks) => prevBooks.filter((b) => b.id !== book.id))
+
 		localStorage.setItem('length', JSON.stringify(updatedIds.length))
 	}
 
@@ -65,7 +66,7 @@ const Cart = ({ dark }) => {
 							<p>Not ready to checkout?</p>
 							<NavLink
 								to={'/books'}
-								style={{ color: "#05b3ea", transition: '0.5s' }}
+								style={{ color: '#05b3ea', transition: '0.5s' }}
 							>
 								Continue Shopping
 							</NavLink>
@@ -73,9 +74,24 @@ const Cart = ({ dark }) => {
 						<div className="booksAndPayment">
 							<div className="itemsContainer">
 								{books.map((data) => (
-									<div className="cartUi" key={data.id} style={{borderBottom: dark ? "1px solid white ": "1px solid black"}}>
-										<NavLink to={`/books_details/${data.id}`} style={{width: "25%", height: "200px"}}>
-											<img src={data.thumbnailUrl} alt={'img'} style={{width: "100%", height: "200px"}}/>
+									<div
+										className="cartUi"
+										key={data.id}
+										style={{
+											borderBottom: dark
+												? '1px solid white '
+												: '1px solid black'
+										}}
+									>
+										<NavLink
+											to={`/books_details/${data.id}`}
+											style={{ width: '25%', height: '200px' }}
+										>
+											<img
+												src={data.thumbnailUrl}
+												alt={'img'}
+												style={{ width: '100%', height: '200px' }}
+											/>
 										</NavLink>
 
 										<div className="infoOfBook">
@@ -124,15 +140,36 @@ const Cart = ({ dark }) => {
 							</div>
 
 							<div className="orderSummary">
-								<h3 style={{ color: dark ? 'white' : 'black', transition: '0.5s' }}>Order Summary</h3>
+								<h3
+									style={{
+										color: dark ? 'white' : 'black',
+										transition: '0.5s'
+									}}
+								>
+									Order Summary
+								</h3>
 
-								<div className="details" style={{ color: dark ? 'white' : 'black', transition: '0.5s' }}>
+								<div
+									className="details"
+									style={{
+										color: dark ? 'white' : 'black',
+										transition: '0.5s'
+									}}
+								>
 									<div className="shipping">
 										<p>Shipping</p>
-										<p >Select Method </p>
+										<p>Select Method </p>
 									</div>
 
-									<div className="payment" style={{borderBottom: dark? "1px solid  white" : "1px solid black",transition: "0.5s"}}>
+									<div
+										className="payment"
+										style={{
+											borderBottom: dark
+												? '1px solid  white'
+												: '1px solid black',
+											transition: '0.5s'
+										}}
+									>
 										<p>Payment</p>
 										<p>Select Method</p>
 									</div>
