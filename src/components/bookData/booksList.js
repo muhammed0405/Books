@@ -7,7 +7,7 @@ const bookdata = {
 			pageCount: 416,
 			publishedDate: { $date: '2009-04-01T00:00:00.000-0700' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg',
+				'https://m.media-amazon.com/images/I/61HpvW+rCRL._AC_UF1000,1000_QL80_.jpg',
 			shortDescription:
 				"Unlocking Android: A Developer's Guide provides concise, hands-on instruction for the Android operating system and development tools. This book teaches important architectural concepts in a straightforward writing style and builds on this with practical and useful examples throughout.",
 			longDescription:
@@ -25,7 +25,7 @@ const bookdata = {
 			pageCount: 592,
 			publishedDate: { $date: '2011-01-14T00:00:00.000-0800' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg',
+				'https://images.manning.com/360/480/resize/book/c/c03e512-9ac6-4803-b133-a8a5040de605/ableson2.png',
 			shortDescription:
 				"Android in Action, Second Edition is a comprehensive tutorial for Android developers. Taking you far beyond \"Hello Android,\" this fast-paced book puts you in the driver's seat as you learn important architectural concepts and implementation strategies. You'll master the SDK, build WebKit apps using HTML 5, and even learn to extend or replace Android's built-in features by building useful and intriguing examples. ",
 			longDescription:
@@ -43,7 +43,7 @@ const bookdata = {
 			pageCount: 0,
 			publishedDate: { $date: '2011-06-03T00:00:00.000-0700' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg',
+				'https://m.media-amazon.com/images/I/413QfW9S6NL.jpg',
             shortDescription:
                 "Griffon in Action is a comprehensive tutorial written for Java developers who want a more productive approach to UI development. In this book, you'll immediately dive into Griffon. After a Griffon orientation and a quick Groovy tutorial, you'll start building examples that explore Griffon's high productivity approach to Swing development. One of the troublesome parts of Swing development is the amount of Java code that is required to get a simple application off the ground.",
 			status: 'PUBLISH',
@@ -59,7 +59,7 @@ const bookdata = {
 			pageCount: 576,
 			publishedDate: { $date: '2009-02-02T00:00:00.000-0800' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed.jpg',
+				'https://images.manning.com/360/480/resize/book/8/79ab8e4-b9f4-46b1-8f8e-ef66553f3f1f/ahmed.png',
 			shortDescription:
 				"New web applications require engaging user-friendly interfaces   and the cooler," +
                 " the better. With Flex 3, web developers at any skill level can create high-quality," +
@@ -78,7 +78,7 @@ const bookdata = {
 			pageCount: 600,
 			publishedDate: { $date: '2010-11-15T00:00:00.000-0800' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed2.jpg',
+				'https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781935182429/flex-4-in-action-9781935182429_hr.jpg',
 			shortDescription:
 				'Using Flex, you can create high-quality, effective, and interactive Rich Internet Applications (RIAs) quickly and easily. Flex removes the complexity barrier from RIA development by offering sophisticated tools and a straightforward programming language so you can focus on what you want to do instead of how to do it. And the new features added in Flex 4 give you an even wider range of options!    Flex 4 in Action is an easy-to-follow, hands-on Flex tutorial that goes beyond feature coverage and helps you put Flex to work in real day-to-day tasks. You\'ll quickly master the Flex API and learn to apply the techniques that make your Flex applications stand out from the crowd.    The expert authors of Flex 4 in Action have one goal-to help you get down to business with Flex. Fast. Flex 4 in Action filters out the noise and dives into the core topics you need every day. Using numerous easy-to-understand examples, Flex 4 in Action gives you a strong foundation that you can build on as the complexity of your projects increases.    Interesting themes, styles, and skins  It\'s in there.  Working with databases  You got it.  Interactive forms and validation  You bet.  Charting techniques to help you visualize data  Bam!  And you\'ll get full coverage of these great Flex 4 upgrades:  Next generation Spark components-New buttons, form inputs, navigation controls and other visual components replace the Flex 3 "Halo" versions. Spark components are easier to customize, which makes skinning and theme design much faster  A new "network monitor" allows you to see the data communications between a Flex application and a backend server, which helps when trying to debug applications that are communicating to another system/service  Numerous productivity boosting features that speed up the process of creating applications  A faster compiler to take your human-written source code and convert it into a machine-readable format  Built-in support for unit testing allows you to improve the quality of your software, and reduce the time spent in testing',
 			status: 'PUBLISH',
@@ -94,7 +94,7 @@ const bookdata = {
 			pageCount: 425,
 			publishedDate: { $date: '2008-10-01T00:00:00.000-0700' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alag.jpg',
+				'https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781933988313/collective-intelligence-in-action-9781933988313_lg.jpg',
 			shortDescription:
 				"There's a great deal of wisdom in a crowd, but how do you listen to a thousand people talking at once  Identifying the wants, needs, and knowledge of internet users can be like listening to a mob.    In the Web 2.0 era, leveraging the collective power of user contributions, interactions, and feedback is the key to market dominance. A new category of powerful programming techniques lets you discover the patterns, inter-relationships, and individual profiles   the collective intelligence   locked in the data people leave behind as they surf websites, post blogs, and interact with other users.    Collective Intelligence in Action is a hands-on guidebook for implementing collective-intelligence concepts using Java. It is the first Java-based book to emphasize the underlying algorithms and technical implementation of vital data gathering and mining techniques like analyzing trends, discovering relationships, and making predictions. It provides a pragmatic approach to personalization by combining content-based analysis with collaborative approaches.    This book is for Java developers implementing collective intelligence in real, high-use applications. Following a running example in which you harvest and use information from blogs, you learn to develop software that you can embed in your own applications. The code examples are immediately reusable and give the Java developer a working collective intelligence toolkit.    Along the way, you work with, a number of APIs and open-source toolkits including text analysis and search using Lucene, web-crawling using Nutch, and applying machine learning algorithms using WEKA and the Java Data Mining (JDM) standard.",
 			status: 'PUBLISH',
@@ -110,7 +110,7 @@ const bookdata = {
 			pageCount: 432,
 			publishedDate: { $date: '2008-12-01T00:00:00.000-0800' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allen.jpg',
+				'https://m.media-amazon.com/images/I/71GITDw-p8L._AC_UF1000,1000_QL80_.jpg',
 			shortDescription:
 				'Zend Framework in Action is a comprehensive tutorial that shows how to use the Zend Framework to create web-based applications and web services. This book takes you on an over-the-shoulder tour of the components of the Zend Framework as you build a high quality, real-world web application.',
 			longDescription:
@@ -128,7 +128,7 @@ const bookdata = {
 			pageCount: 265,
 			publishedDate: { $date: '2010-10-15T00:00:00.000-0700' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/allmon.jpg',
+				'https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51Cgvbfs3eL._AC_UF1000,1000_QL80_.jpg',
 			shortDescription:
 				'   A beautifully written book that is a must have for every Java Developer.       Ashish Kulkarni, Technical Director, E-Business Software Solutions Ltd.',
 			longDescription:
@@ -146,7 +146,7 @@ const bookdata = {
 			pageCount: 375,
 			publishedDate: { $date: '2012-06-04T00:00:00.000-0700' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/almiray.jpg',
+				'https://images.manning.com/360/480/resize/book/f/2c194a9-e67e-4db5-ac68-4309b6a2cae3/almiray.png',
 			shortDescription:
 				"Griffon in Action is a comprehensive tutorial written for Java developers who want a more productive approach to UI development. In this book, you'll immediately dive into Griffon. After a Griffon orientation and a quick Groovy tutorial, you'll start building examples that explore Griffon's high productivity approach to Swing development. One of the troublesome parts of Swing development is the amount of Java code that is required to get a simple application off the ground.",
 			longDescription:
@@ -164,7 +164,7 @@ const bookdata = {
 			pageCount: 325,
 			publishedDate: { $date: '2011-12-12T00:00:00.000-0800' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/alves.jpg',
+				'https://images.manning.com/360/480/resize/book/9/eb1d051-f45c-43d0-ae11-bb68f0831992/alves.png',
 			shortDescription:
 				'Enterprise OSGi shows a Java developer how to develop to the OSGi Service Platform Enterprise specification, an emerging Java-based technology for developing modular enterprise applications. Enterprise OSGi addresses several shortcomings of existing enterprise platforms, such as allowing the creation of better maintainable and extensible applications, and provide a simpler, easier-to-use, light-weight solution to enterprise software development.',
 			longDescription:
@@ -182,7 +182,7 @@ const bookdata = {
 			pageCount: 592,
 			publishedDate: { $date: '2008-01-01T00:00:00.000-0800' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/armstrong.jpg',
+				'https://images.manning.com/360/480/resize/book/c/1b13abf-9978-481a-97dd-08870018ff66/armstrong.png',
 			shortDescription:
 				'Rails is a fantastic tool for web application development, but its Ajax-driven interfaces stop short of the richness you gain with a tool like Adobe Flex. Simply put, Flex is the most productive way to build the UI of rich Internet applications, and Rails is the most productive way to rapidly build a database-backed CRUD application. Together, they\'re an amazing combination.    Flexible Rails is a book about how to use Ruby on Rails and Adobe Flex to build next-generation rich Internet applications (RIAs). The book takes you to the leading edge of RIA development, presenting examples in Flex 3 and Rails 2.    This book is not an exhaustive Ruby on Rails tutorial, nor a Flex reference manual. (Adobe ships over 3000 pages of PDF reference documentation with Flex.) Instead, it\'s an extensive tutorial, developed iteratively, how to build an RIA using Flex and Rails together. You learn both the specific techniques you need to use Flex and Rails together as well as the development practices that make the combination especially powerful.    The example application built in the book is MIT-licensed, so readers can use it as the basis for their own applications. In fact, one reader has already built an agile project management tool based on the book example!    With this book, you learn Flex by osmosis. You can read the book and follow along even if you have never used Flex before. Consider it "Flex Immersion." You absorb the key concepts of Flex as you go through the process of building the application.    You will also learn how Flex and Rails integrate with HTTPService and XML, and see how RESTful Rails controller design gracefully supports using the same controller actions for Flex and HTML clients. The author will show you how Cairngorm can be used to architect larger Flex applications, including tips to use Cairngorm in a less verbose way with HTTPService to talk to Rails.    Flexible Rails is for both Rails developers who are interested in Flex, and Flex developers who are interested in Rails. For a Rails developer, Flex allows for more dynamic and engaging user interfaces than are possible with Ajax. For a Flex developer, Rails provides a way to rapidly build the ORM and services layer of the application.',
 			status: 'PUBLISH',
@@ -198,7 +198,7 @@ const bookdata = {
 			pageCount: 258,
 			publishedDate: { $date: '2009-11-01T00:00:00.000-0700' },
 			thumbnailUrl:
-				'https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/armstrong3.jpg',
+				'https://m.media-amazon.com/images/I/41gJSBaoIwL._AC_UF1000,1000_QL80_.jpg',
 			shortDescription:
 				"Hello! Flex 4 progresses through 26 self-contained examples selected so you can progressively master Flex. They vary from small one-page apps, to a 3D rotating haiku, to a Connect Four-like game. And in the last chapter you'll learn to build a full Flex application called SocialStalkr   a mashup that lets you follow your friends by showing their tweets on a Yahoo map.",
 			longDescription:
