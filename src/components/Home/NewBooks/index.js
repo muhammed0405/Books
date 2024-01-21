@@ -32,7 +32,7 @@ const NewBooks = ({ blackColor }) => {
 									{' '}
 									{book.title}
 								</h4>{' '}
-								<p>{book.authors["0"]}</p>
+								<p style={{ color: blackColor ? 'yellow' : 'black' }}>{book.authors["0"]}</p>
 							</div>
 						))}
 					</div>
