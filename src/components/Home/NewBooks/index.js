@@ -11,7 +11,7 @@ const NewBooks = ({ blackColor }) => {
 				<div className="newBooks">
 					<h1 style={{ color: blackColor ? 'white' : 'black' }}>New Books</h1>
 					<div className="newBooksContainer">
-						{bookData.bookdata.slice(17, 20,).map((book, index) => (
+						{bookData.bookdata.slice(5,8,).map((book, index) => (
 							<div key={index} style={{width: "200px"}}>
 								<Link to={`/books_details/${book.id}`}>
 									{' '}

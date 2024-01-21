@@ -2,7 +2,6 @@ import React from 'react'
 import './style.scss'
 import ItWas from '../../../assets/img/itWas.png'
 import { Link, NavLink } from 'react-router-dom'
-import AllBooks from '../../../Pages/Books/BooksDetail'
 
 
 const Books = ({ blackColor }) => {
