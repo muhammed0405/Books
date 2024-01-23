@@ -2,8 +2,11 @@ import React from 'react'
 import './style.scss'
 import ItWas from '../../../assets/img/itWas.png'
 import { Link } from 'react-router-dom'
+import {useSelector} from "react-redux";
 
-const Books = ({ blackColor }) => {
+const Books = () => {
+	const { dark } = useSelector((state) => state)
+
 	const bookData = require('../../../components/bookData/booksList')
 	return (
 		<div>
@@ -12,7 +15,7 @@ const Books = ({ blackColor }) => {
 					<h1
 						style={{
 							transition: '0.5s',
-							color: blackColor ? 'white' : 'black;'
+							color: dark ? 'white' : 'black;'
 						}}
 					>
 						Books
@@ -49,13 +52,13 @@ const Books = ({ blackColor }) => {
 									/>
 								</Link>{' '}
 								<h4
-									style={{ color: blackColor ? 'white' : 'black' }}
+									style={{ color: dark ? 'white' : 'black' }}
 									className={'imageTitle'}
 								>
 									{' '}
 									{book.title}
 								</h4>{' '}
-								<p style={{ color: blackColor ? 'yellow' : 'black' }}>
+								<p style={{ color: dark ? 'yellow' : 'black' }}>
 									{book.authors['0']}
 								</p>
 							</div>

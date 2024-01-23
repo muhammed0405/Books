@@ -1,12 +1,11 @@
 import React from 'react'
 import './style.scss'
 import HeroBackground from '../../../assets/img/mainImage.png'
+import {useSelector} from "react-redux";
 
-const Hero = ({blackColor}) => {
-	console.log(
-		blackColor
-	)
+const Hero = () => {
 
+	const { dark } = useSelector((state) => state)
 
 	return (
 		<div

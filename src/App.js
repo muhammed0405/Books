@@ -4,10 +4,10 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import { useState } from 'react';
 import Footer from './components/Footer';
-import Books from './Pages/Books';
-import Cart from "./Pages/Cart";
-import BooksDetail from "./Pages/Books/BooksDetail";
-import AboutUsPage from "./Pages/AboutUsPage";
+import Books from './components/Pages/Books';
+import Cart from "./components/Pages/Cart";
+import BooksDetail from "./components/Pages/Books/BooksDetail";
+import AboutUsPage from "./components/Pages/AboutUsPage";
 
 function App() {
 	const [idOfBook, setIdOfBook] = useState(null);
@@ -15,15 +15,15 @@ function App() {
 		setIdOfBook(bookID)
 	}
 
-	const [dark, setDark] = useState(false);
+
 	return (
 		<>
-			<Header dark={dark} setDark={setDark} />
+			<Header/>
 			<Routes>
-				<Route path={'/'} element={<Home dark={dark} />} />
-				<Route path={'/books'} element={<Books dark={dark} />} />
-				<Route path={"/cart"} element={<Cart dark={dark} idOfBook={idOfBook}  />} />
-				<Route path={"/books_details/:bookId"} element={<BooksDetail dark={dark} setIdOfBook={getId}/> } />
+				<Route path={'/'} element={<Home/>} />
+				<Route path={'/books'} element={<Books/>} />
+				<Route path={"/cart"} element={<Cart idOfBook={idOfBook}  />} />
+				<Route path={"/books_details/:bookId"} element={<BooksDetail  setIdOfBook={getId}/> } />
 				<Route path={"/about_us"} element={<AboutUsPage/>}/>
 			</Routes>
 			<Footer />

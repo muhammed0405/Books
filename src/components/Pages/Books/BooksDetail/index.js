@@ -2,13 +2,15 @@
 import React, {  useState } from 'react';
 import './style.scss';
 import { useParams } from 'react-router-dom';
-import bookData from '../../../components/bookData/booksList';
+import bookData from '../../../bookData/booksList';
 import { IoMdAdd } from 'react-icons/io';
 import { RiSubtractFill } from 'react-icons/ri';
 import { FaRegHeart } from 'react-icons/fa';
 import { LuShare2 } from 'react-icons/lu';
+import {useSelector} from "react-redux";
 
-const BookDetails = ({ dark,  setIdOfBook }) => {
+const BookDetails = ({ setIdOfBook }) => {
+	const { dark } = useSelector((state) => state)
 
 	const [count, setCount] = useState(1);
 

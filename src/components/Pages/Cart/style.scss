@@ -69,11 +69,33 @@
           .costAndQuantity{
             margin: 50px 0 0 0 ;
 
-            .quantity{
-              color:  #19272E;
-              font-size: 16px;
-              font-weight: 400;
+            .quantityAddAndRemove{
+
+              display: flex;
+              justify-content: space-around;
+              width: 150px;
+
+              .quantity{
+                color:  #19272E;
+                font-size: 16px;
+                font-weight: 400;
+              }
+
+              .subtract{
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                cursor: pointer;
+              }
+
+              .add{
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                cursor: pointer;
+              }
             }
+
 
             .cost{
               margin: 5px 0 0 0;

@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './style.scss'
-import { NavLink } from 'react-router-dom'
-import bookData from '../../components/bookData/booksList'
+import {NavLink} from 'react-router-dom'
+import bookData from '../../bookData/booksList'
+import {useSelector} from "react-redux";
 
-const Cart = ({ dark }) => {
-	// бул жерде сорттолгон китептер сакталган
+const Cart = ({idOfBook}) => {
+	const {dark } = useSelector(state => state)
 	const [books, setBooks] = useState([])
 
 	// бул локяльный стордогу китептердин айдисин алат
@@ -46,6 +47,8 @@ const Cart = ({ dark }) => {
 
 		localStorage.setItem('length', JSON.stringify(updatedIds.length))
 	}
+	console.log(idOfBook)
+
 
 	return (
 		<>
@@ -116,15 +119,19 @@ const Cart = ({ dark }) => {
 											</div>
 
 											<div className="costAndQuantity">
-												<p
-													className={'quantity'}
-													style={{
-														color: dark ? 'white' : 'black',
-														transition: '0.5s'
-													}}
-												>
-													quantity: {data.quantity}
-												</p>
+
+												<div className="quantityAddAndRemove">
+													<p
+														className={'quantity'}
+														style={{
+															color: dark ? 'white' : 'black',
+															transition: '0.5s'
+														}}
+													>
+														quantity: {data.quantity}
+													</p>
+												</div>
+
 												<p className={'cost'}>$ {data.price}</p>
 											</div>
 										</div>

@@ -1,14 +1,16 @@
 import React from 'react'
 import "./style.scss"
 import TowerOfBooks from '../../../assets/img/towerOfBooks.png'
+import {useSelector} from "react-redux";
 
-const AboutUs = ({blackColor}) => {
+const AboutUs = () => {
+	const {dark} = useSelector(state => state)
 	return (
 		<>
 			<div className="container">
 				<div className="aboutUs">
 					<div className="title">
-						<h1 style={{transition: '0.5s',color: blackColor? "white": "black;"}}> About Us</h1>
+						<h1 style={{transition: '0.5s',color: dark? "white": "black;"}}> About Us</h1>
 					</div>
 
 					<div className="aboutUs--content">
@@ -16,7 +18,7 @@ const AboutUs = ({blackColor}) => {
 							<img src={TowerOfBooks} alt="img" />
 						</div>
 						<div className="aboutUs--content__text">
-							<p style={{transition: '0.5s',color: blackColor? "white": "black;"}}>
+							<p style={{transition: '0.5s',color: dark? "white": "black;"}}>
 								We believe that books have the power to change lives, and <br />
 								we're dedicated to helping our customers find the perfect <br />
 								book for them. Whether you're looking for an escape from <br />

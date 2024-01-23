@@ -5,12 +5,15 @@ import { CiSearch } from 'react-icons/ci'
 import { IoBag } from 'react-icons/io5'
 import './style.scss'
 import DarkMode from './DarkMode/DarkMode'
+import {useDispatch, useSelector} from "react-redux";
 
-const Header = ({ dark, setDark}) => {
-	const [countOfBook, setCountOfBook] = useState(0)
+const Header = () => {
+	const {dark} = useSelector(state => state)
+	const dispatch = useDispatch()
+	const {countOfBook} = useSelector(state => state)
 useEffect(()=>{
 	 setInterval(()=>{
-		setCountOfBook(localStorage.getItem("length") || 0)
+		 dispatch({type: "SET_COUNT_OF_BOOK"})
 	},100);
 
 },[])
@@ -101,7 +104,7 @@ useEffect(()=>{
 								</NavLink>
 							</div>
 							<div className="dark-mode">
-								<DarkMode dark={dark} setDark={setDark} />
+								<DarkMode />
 							</div>
 						</div>
 					</div>

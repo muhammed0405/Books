@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import './style.scss'
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
+import {useSelector} from "react-redux";
 
-const Books = ({ dark }) => {
-	const bookData = require('../../components/bookData/booksList')
+const Books = () => {
+	const { dark } = useSelector((state) => state)
+
+	const bookData = require('../../bookData/booksList')
 	const [checkboxes, setCheckboxes] = useState(Array(11).fill(false))
 
 	const handleClearFilters = () => {
