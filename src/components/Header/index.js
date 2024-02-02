@@ -8,15 +8,15 @@ import DarkMode from './DarkMode/DarkMode'
 import {useDispatch, useSelector} from "react-redux";
 
 const Header = () => {
-	const {dark} = useSelector(state => state)
+	const dark = useSelector(state => state.dark)
 	const dispatch = useDispatch()
-	const {countOfBook} = useSelector(state => state)
+	const countOfBook = useSelector(state => state.countOfBook)
 useEffect(()=>{
 	 setInterval(()=>{
 		 dispatch({type: "SET_COUNT_OF_BOOK"})
 	},100);
 
-},[])
+},[dispatch])
 
 
 	const [searchVisible, setSearchVisible] = useState(false);

@@ -1,6 +1,6 @@
 .cart{
   padding-top: 40px ;
-  font-family: 'Bodoni', sans-serif;
+  font-family: 'Poppins', sans-serif;
 
   .cartTitle{
     color: var(--Text-color, #19272E);
@@ -70,10 +70,9 @@
             margin: 50px 0 0 0 ;
 
             .quantityAddAndRemove{
-
-              display: flex;
-              justify-content: space-around;
               width: 150px;
+              display: flex;
+              align-items: center;
 
               .quantity{
                 color:  #19272E;
@@ -81,18 +80,30 @@
                 font-weight: 400;
               }
 
-              .subtract{
+              .subtractBtn{
                 width: 20px;
                 height: 20px;
+                background: none;
                 text-align: center;
                 cursor: pointer;
+                border: none;
+                margin: 0 10px;
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 45px;
               }
 
-              .add{
+              .addBtn{
+                background: none;
                 width: 20px;
                 height: 20px;
                 text-align: center;
                 cursor: pointer;
+                border: none;
+
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 45px;
               }
             }
 

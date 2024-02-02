@@ -1,13 +1,16 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import './style.scss'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import bookData from '../../bookData/booksList'
-import {useSelector} from "react-redux";
+import { useDispatch, useSelector } from 'react-redux'
+import { MdKeyboardArrowDown } from 'react-icons/md'
+import { RiSubtractFill } from 'react-icons/ri'
+import { IoMdAdd } from 'react-icons/io'
 
-const Cart = ({idOfBook}) => {
-	const {dark } = useSelector(state => state)
-	const [books, setBooks] = useState([])
-
+const Cart = () => {
+	const dark = useSelector((state) => state.dark)
+	const sortedBooks = useSelector((state) => state.sortedBooks)
+	const dispatch = useDispatch()
 	// бул локяльный стордогу китептердин айдисин алат
 	const getIdsFromLocalStr = () => {
 		return JSON.parse(localStorage.getItem('bookIds')) || []
@@ -16,7 +19,7 @@ const Cart = ({idOfBook}) => {
 	const getQuantityFromLocalStr = () => {
 		return JSON.parse(localStorage.getItem('quantity')) || {}
 	}
-
+	setInterval(() => {}, 100)
 	useEffect(() => {
 		// бул жерде сортолот локальный стордогу айдилерди салыштырып бир гана стордогу китептер калат
 		let arrayOfBook = bookData.bookdata.filter((el) =>
@@ -29,8 +32,23 @@ const Cart = ({idOfBook}) => {
 			quantity: getQuantityFromLocalStr()[book.id] || 0
 		}))
 
-		setBooks(arrayOfBook)
-	}, [])
+		dispatch({ type: 'SORT_BOOKS', payload: { sortedBooks: arrayOfBook } })
+	}, [dispatch])
+
+	const updateQuantities = () => {
+		let arrayOfBook = bookData.bookdata.filter((el) =>
+			getIdsFromLocalStr().includes(el.id)
+		)
+
+		// бул обновления кылат
+		arrayOfBook = arrayOfBook.map((book) => ({
+			...book,
+			quantity: getQuantityFromLocalStr()[book.id] || 0
+		}))
+
+		dispatch({ type: 'SORT_BOOKS', payload: { sortedBooks: arrayOfBook } })
+	}
+
 	const removeBookFromCart = (book) => {
 		const existingIds = getIdsFromLocalStr()
 
@@ -43,12 +61,14 @@ const Cart = ({idOfBook}) => {
 		localStorage.setItem('bookIds', JSON.stringify(updatedIds))
 		localStorage.setItem('quantity', JSON.stringify(existingQuantities))
 
-		setBooks((prevBooks) => prevBooks.filter((b) => b.id !== book.id))
-
+		dispatch({
+			type: 'SORT_BOOKS',
+			payload: {
+				sortedBooks: sortedBooks.filter((el) => el.id !== book.id)
+			}
+		})
 		localStorage.setItem('length', JSON.stringify(updatedIds.length))
 	}
-	console.log(idOfBook)
-
 
 	return (
 		<>
@@ -76,7 +96,7 @@ const Cart = ({idOfBook}) => {
 						</div>
 						<div className="booksAndPayment">
 							<div className="itemsContainer">
-								{books.map((data) => (
+								{sortedBooks.map((data) => (
 									<div
 										className="cartUi"
 										key={data.id}
@@ -119,16 +139,54 @@ const Cart = ({idOfBook}) => {
 											</div>
 
 											<div className="costAndQuantity">
-
 												<div className="quantityAddAndRemove">
 													<p
 														className={'quantity'}
 														style={{
+															textAlign: 'start',
 															color: dark ? 'white' : 'black',
 															transition: '0.5s'
 														}}
 													>
 														quantity: {data.quantity}
+														<button
+															className="subtractBtn"
+															onClick={() => {
+																dispatch({
+																	type: 'MINUS_COUNT_LOCAL',
+																	payload: { id: data.id }
+																})
+																updateQuantities()
+															}}
+														>
+															{
+																<RiSubtractFill
+																	style={{
+																		transition: '0.5s',
+																		color: dark ? 'white' : 'black'
+																	}}
+																/>
+															}
+														</button>
+														<button
+															className="addBtn"
+															onClick={() => {
+																dispatch({
+																	type: 'ADD_COUNT_LOCAL',
+																	payload: { id: data.id }
+																})
+																updateQuantities()
+															}}
+														>
+															{
+																<IoMdAdd
+																	style={{
+																		transition: '0.5s',
+																		color: dark ? 'white' : 'black'
+																	}}
+																/>
+															}
+														</button>
 													</p>
 												</div>
 
@@ -164,7 +222,12 @@ const Cart = ({idOfBook}) => {
 									}}
 								>
 									<div className="shipping">
-										<p>Shipping</p>
+										<p>Shipping <MdKeyboardArrowDown
+											style={{
+												transition: '0.5s',
+												color: dark ? 'white' : 'black'
+											}}
+										/></p>
 										<p>Select Method </p>
 									</div>
 
@@ -177,7 +240,15 @@ const Cart = ({idOfBook}) => {
 											transition: '0.5s'
 										}}
 									>
-										<p>Payment</p>
+										<p>
+											Payment{' '}
+											<MdKeyboardArrowDown
+												style={{
+													transition: '0.5s',
+													color: dark ? 'white' : 'black'
+												}}
+											/>
+										</p>
 										<p>Select Method</p>
 									</div>
 
@@ -186,7 +257,7 @@ const Cart = ({idOfBook}) => {
 										<p className={'totalCost'}>
 											{' '}
 											${' '}
-											{books.reduce(
+											{sortedBooks.reduce(
 												(total, book) => total + book.price * book.quantity,
 												0
 											)}

@@ -28,37 +28,35 @@ const Footer = () => {
 								updates.
 							</p>
 							<div className="footer--emailSendler">
-
 								<input
-								type="email"
-								value={value}
-								onChange={(e) => {
-									setValue(e.target.value)
-									// Reset validation when the user types
-									setIsValid(true)
-								}}
-								onKeyDown={enterEvent}
-								placeholder={'Email Address'}
-								className={isValid ? '' : 'invalid'}
-							/>
+									id="footer--emailSendler__input"
+									type="email"
+									value={value}
+									onChange={(e) => {
+										setValue(e.target.value)
+										// Reset validation when the user types
+										setIsValid(true)
+									}}
+									onKeyDown={enterEvent}
+									placeholder={'Email Address'}
 
-							<button
-								onClick={() => {
-									setValue('')
-								}}
-							>
-								Sign Up
-							</button>
-							{!isValid && (
-								<span
-									className="error-mark"
+									className={isValid ? '' : 'invalid'}
+								/>
+
+								<button
+									onClick={() => {
+										setValue('')
+									}}
 								>
-									There must be a " @gmail.com " !
-								</span>
-							)}
+									Sign Up
+								</button>
 
+								{!isValid && (
+									<span className="error-mark">
+										There must be a " @gmail.com " !
+									</span>
+								)}
 							</div>
-							
 						</div>
 
 						<div className="footer--info">

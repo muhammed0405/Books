@@ -8,6 +8,8 @@ const Books = () => {
 	const { dark } = useSelector((state) => state)
 
 	const bookData = require('../../../components/bookData/booksList')
+
+
 	return (
 		<div>
 			<div className="container">

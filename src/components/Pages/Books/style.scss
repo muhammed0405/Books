@@ -5,49 +5,50 @@
 		padding-top: 3%;
 		padding-left: 13.5%;
 
-		.FiltersBlock {
+
+	}
+	.FiltersBlock {
+		border-radius: 30px;
+		display: flex;
+		width: 90%;
+		justify-content: space-between;
+		margin-top: 100px;
+		padding-left: 80px;
+		.FiltersBlockLeft {
+			align-items: center;
 			border-radius: 30px;
-			color: black;
 			display: flex;
-			height: 50px;
-			justify-content: space-between;
-			margin-top: 5%;
-			.FiltersBlockLeft {
-				align-items: center;
-				background-color: lime;
-				border-radius: 30px;
-				display: flex;
-				justify-content: space-around;
-				width: 16.5%;
-			}
+			justify-content: space-around;
+			width: 200px;
+		}
 
-			.FiltersBlockRight {
-				align-items: center;
-				display: flex;
-				justify-content: center;
-				width: 15%;
+		.FiltersBlockRight {
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			width: 240px;
 
-				.FiltersButton {
-					background: transparent;
-					border-radius: 8px;
-					border: 1px solid var(--Main-color, #818EEA);
-					color: aqua;
-					cursor: pointer;
-					height: 40px;
-					transition: 1s;
-					width: 150px;
-					display: flex;
-                    justify-content: space-between;
-					align-items: center;
-					&:hover {
-						background: aqua;
-						color: #222;
-					}
+
+			.FiltersButton {
+				background: transparent;
+				border-radius: 8px;
+				border: 1px solid var(--Main-color, #818EEA);
+				color: aqua;
+				cursor: pointer;
+				height: 40px;
+				transition: 1s;
+				width: 150px;
+				padding: 0 5px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				&:hover {
+					background: aqua;
+					color: #222;
 				}
 			}
 		}
 	}
-
 	.BooksPage {
 		display: flex;
 		padding-top: 5%;

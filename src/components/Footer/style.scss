@@ -32,7 +32,7 @@
 			.footer--emailSendler {
 				position: relative;
 
-				input {
+				#footer--emailSendler__input{
 					padding: 0 0 0 5px;
 					background: none;
 					width: 398px;
@@ -51,11 +51,11 @@
 					letter-spacing: -0.3px;
 				}
 
-				input::placeholder {
+				#footer--emailSendler__input::placeholder {
 					color: white;
 				}
 
-				input.invalid {
+				#footer--emailSendler__input.invalid {
 					border-color: red;
 				}
 

@@ -24,31 +24,33 @@ const Books = () => {
 
 	return (
 		<div className="container">
-			<div className="booksTitle" style={{ color: dark ? 'white' : 'black' }}>
-				<h1 style={{ color: dark ? 'white' : 'black' }}>All Books</h1>
-				<span style={{ color: dark ? 'white' : 'black' }}>
+			<div className="booksTitle" style={{transition: "0.5s", color: dark ? 'white' : 'black'}}>
+				<h1 style={{transition: "0.5s", color: dark ? 'white' : 'black'}}>All Books</h1>
+				<span style={{transition: "0.5s", color: dark ? 'white' : 'black'}}>
 					Here you can find all the books you need
 				</span>
-				<div className="FiltersBlock">
-					<div className="FiltersBlockLeft">
-						<h3>Filters</h3>
-						{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-						<a href={'#'} onClick={handleClearFilters}>
-							Clear filters
-						</a>
-					</div>
-					<div className="FiltersBlockRight">
-						<div className="FiltersButton">
-							<p>Sort By</p> <h4>Popular</h4> {<IoIosArrowDown />}
-						</div>
+
+			</div>
+			<div className="FiltersBlock">
+				<div className="FiltersBlockLeft">
+					<h3 style={{transition: "0.5s", color: dark ? 'white' : 'black'}}>Filters</h3>
+					{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+					<a href={'#'} onClick={handleClearFilters}
+					   style={{transition: "0.5s", color: dark ? 'lightblue' : 'blue'}}>
+						Clear filters
+					</a>
+				</div>
+				<div className="FiltersBlockRight">
+					<div className="FiltersButton">
+						<p>Sort By</p> <h4>Popular</h4> {<IoIosArrowDown/>}
 					</div>
 				</div>
 			</div>
-			<div className="BooksPage" style={{ color: dark ? 'white' : 'black' }}>
+			<div className="BooksPage" style={{transition: "0.5s", color: dark ? 'white' : 'black'}}>
 				<div className="BookTypes">
 					<div
 						className="BooksGroup"
-						style={{ display: 'flex', width: '500px' }}
+						style={{display: 'flex', width: '500px'}}
 					>
 						<div className="BooksInputs">
 							{checkboxes.map((isChecked, index) => (
@@ -93,7 +95,7 @@ const Books = () => {
 								/>
 							</Link>
 							<h4
-								style={{ color: dark ? 'white' : 'black' }}
+								style={{transition: "0.5s", color: dark ? 'white' : 'black'}}
 								className={'imageTitle'}
 							>
 								{book.title}

@@ -4,30 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="chaged style of link">
-      <change afterPath="$PROJECT_DIR$/src/components/Reducer/index.js" afterDir="false" />
+    <list default="true" id="2671c129-af0c-4a3c-ae00-4fa7b1e53d29" name="Changes" comment="here i use redux">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/AboutUsPage/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/AboutUsPage/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/AboutUsPage/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/AboutUsPage/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Books/BooksDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Books/BooksDetail/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Books/BooksDetail/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Books/BooksDetail/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Books/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Books/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Books/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Books/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Cart/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Cart/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/DarkMode/DarkMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/DarkMode/DarkMode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/AboutUs/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/AboutUs/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home/Books/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Books/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Genres/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Genres/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Hero/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Hero/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/NewBooks/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/NewBooks/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/bookData/booksList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/bookData/booksList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Books/BooksDetail/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Books/BooksDetail/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Books/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Books/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Books/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Books/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Cart/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Cart/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Cart/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Cart/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Reducer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Reducer/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,28 +71,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Muhammet/Desktop/Alll/Programming/Projects/Books/src/components",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "npm.npm start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Muhammet\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "settings.editor.splitter.proportion": "0.26476577",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Muhammet/Desktop/Alll/Programming/Projects/Books/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.npm start.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Muhammet\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.26476577&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -182,7 +173,9 @@
       <workItem from="1706022407282" duration="81000" />
       <workItem from="1706024392774" duration="402000" />
       <workItem from="1706025393356" duration="54000" />
-      <workItem from="1706025705193" duration="2251000" />
+      <workItem from="1706025705193" duration="2366000" />
+      <workItem from="1706101157164" duration="3234000" />
+      <workItem from="1706106107407" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -344,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705832940784</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="here i use redux">
+      <option name="closed" value="true" />
+      <created>1706028069786</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1706028069786</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +385,7 @@
     <MESSAGE value="changed style of cart" />
     <MESSAGE value="my final push" />
     <MESSAGE value="chaged style of link" />
-    <option name="LAST_COMMIT_MESSAGE" value="chaged style of link" />
+    <MESSAGE value="here i use redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="here i use redux" />
   </component>
 </project>
