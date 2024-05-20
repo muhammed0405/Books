@@ -39,7 +39,6 @@ const Footer = () => {
 									}}
 									onKeyDown={enterEvent}
 									placeholder={'Email Address'}
-
 									className={isValid ? '' : 'invalid'}
 								/>
 
@@ -59,40 +58,44 @@ const Footer = () => {
 							</div>
 						</div>
 
-						<div className="footer--info">
-							<h3>Lorem ipsum</h3>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-						</div>
+						<div
+							className="footer--links"
+						>
+							<div className="footer--info">
+								<h3>Lorem ipsum</h3>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+							</div>
 
-						<div className="footer--info">
-							<h3>Lorem ipsum</h3>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-						</div>
+							<div className="footer--info">
+								<h3>Lorem ipsum</h3>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+							</div>
 
-						<div className="footer--info">
-							<h3>Lorem ipsum</h3>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-						</div>
+							<div className="footer--info">
+								<h3>Lorem ipsum</h3>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+							</div>
 
-						<div className="footer--info">
-							<h3>Lorem ipsum</h3>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
-							<p>Lorem ipsum</p>
+							<div className="footer--info">
+								<h3>Lorem ipsum</h3>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+								<p>Lorem ipsum</p>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -1,9 +1,9 @@
 import React from 'react'
-import Hero from './Hero'
-import Genres from './Genres'
-import NewBooks from './NewBooks'
-import Books from './Books'
 import AboutUs from './AboutUs'
+import Books from './Books/index'
+import Genres from './Genres'
+import Hero from './Hero'
+import NewBooks from './NewBooks/index';
 const Home = () => {
 	return (
 		<>

@@ -1,43 +1,29 @@
 import React from 'react'
-import './style.scss'
-import ItWas from '../../../assets/img/itWas.png'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import {useSelector} from "react-redux";
+import './style.scss'
 
 const Books = () => {
 	const { dark } = useSelector((state) => state)
 
-	const bookData = require('../../../components/bookData/booksList')
-
+	const bookData = require('../../bookData/booksList')
 
 	return (
 		<div>
 			<div className="container">
 				<div className="books">
-					<h1
-						style={{
-							transition: '0.5s',
-							color: dark ? 'white' : 'black;'
-						}}
-					>
-						Books
-					</h1>
-					<Link
-						to={'/books'}
-						style={{
-							position: 'relative',
-							left: '93%',
-							bottom: '20px',
-							transition: '0.5s',
-							color: '#818EEA',
-							fontSize: '18px',
-							fontStyle: 'normal',
-							fontWeight: '500',
-							lineHeight: '120%'
-						}}
-					>
-						View All
-					</Link>
+					<div className="books__title">
+						<h1
+							style={{
+								transition: '0.5s',
+								color: dark ? 'white' : 'black;'
+							}}
+						>
+							Books
+						</h1>
+						<Link to={'/books'}>View All</Link>
+					</div>
+
 					<div className="booksUiContainer">
 						{bookData.bookdata.slice(0, 5).map((book, index) => (
 							<div key={index} style={{ width: '200px' }}>
@@ -65,9 +51,6 @@ const Books = () => {
 								</p>
 							</div>
 						))}
-						<div className="halfImage">
-							<img src={ItWas} alt="" />
-						</div>
 					</div>
 				</div>
 			</div>

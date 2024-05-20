@@ -121,6 +121,7 @@ const Cart = () => {
 											<div className="title">
 												<h1
 													style={{
+														width: "90%",
 														color: dark ? 'white' : 'black',
 														transition: '0.5s'
 													}}

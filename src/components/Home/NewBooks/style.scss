@@ -1,10 +1,10 @@
 .newBooks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 112px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-bottom: 112px;
 	h1 {
 		color: #19272e;
 		text-align: center;
@@ -13,16 +13,26 @@
 		font-weight: 500;
 	}
 
-    .newBooksContainer{
-        display: flex;
-        justify-content: space-around;
-        width: 1000px;
-        margin-top: 100px;
-    
-        .centerEl{
-            position: absolute;
-            bottom: 60px;
-        }
-    }
+	.newBooksContainer {
+       
+		display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+		gap: 5%;
+		max-width: 1000px;
+		margin-top: 100px;
 
+		.centerEl {
+			position: absolute;
+			bottom: 60px;
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.newBooksContainer {
+			width: 1000px;
+            display: flex;
+            justify-content: space-around;
+		}
+	}
 }

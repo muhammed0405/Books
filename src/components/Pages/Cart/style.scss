@@ -1,208 +1,205 @@
-.cart{
-  padding-top: 40px ;
-  font-family: 'Poppins', sans-serif;
+.cart {
+	padding-top: 40px;
+	font-family: 'Poppins', sans-serif;
+	.cartTitle {
+		color: var(--Text-color, #19272e);
 
-  .cartTitle{
-    color: var(--Text-color, #19272E);
+		font-size: 36px;
+		font-weight: 600;
+		line-height: 44px; /* 122.222% */
+		letter-spacing: -1.5px;
+	}
 
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 44px; /* 122.222% */
-    letter-spacing: -1.5px;
-  }
+	.returnToShop {
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
 
-  .returnToShop{
-    display: flex;
-    gap: 10px;
-  }
+	.booksAndPayment {
+		display: flex;  
+		gap: 40px 100px;
+		padding-right: 100px;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 0 50px;
 
-  .booksAndPayment{
-    display: flex;
-    justify-content: space-between;
-    padding-right: 100px;
+		.itemsContainer {
+			overflow: auto;
+			height: 350px;
+			padding: 20px;
+			border: 1px solid gray;
+			min-width: 320px;
+			.cartUi {
+				display: flex;
+				gap: 0 32px;
+				max-width: 560px;
+				min-width: 320px;
+				margin: 30px 0;
+				padding-bottom: 32px;
+				position: relative;
 
+				img {
+					width: 25%;
+					height: 200px;
+				}
 
+				.infoOfBook {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					padding: 5px 0 10px 0;
+					width: 280px;
 
-    .itemsContainer{
+					.title {
+						h1 {
+							color: #19272e;
+							font-size: 16px;
+							font-weight: 700;
+							margin: 0 0 20px 0;
+						}
 
+						.author {
+							color: #19272e;
+							font-size: 14px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 130%;
+						}
+					}
 
-      .cartUi{
-        display: flex;
-        gap : 0 32px;
-        width: 560px ;
-        margin: 30px 0 ;
-        padding-bottom: 32px ;
-        position: relative;
+					.costAndQuantity {
+						margin: 50px 0 0 0;
 
-        img{
-          width: 25%  ;
-          height: 200px;
-        }
+						.quantityAddAndRemove {
+							width: 150px;
+							display: flex;
+							align-items: center;
 
-        .infoOfBook{
+							.quantity {
+								color: #19272e;
+								font-size: 16px;
+								font-weight: 400;
+							}
 
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          padding: 5px 0 10px 0 ;
-          width: 280px;
+							.subtractBtn {
+								width: 20px;
+								height: 20px;
+								background: none;
+								text-align: center;
+								cursor: pointer;
+								border: none;
+								margin: 0 10px;
+								font-size: 16px;
+								font-weight: 600;
+								border-radius: 45px;
+							}
 
-          .title{
-            h1{
-              color:  #19272E;
-              font-size: 16px;
-              font-weight: 700;
-              margin: 0 0 20px 0 ;
-            }
+							.addBtn {
+								background: none;
+								width: 20px;
+								height: 20px;
+								text-align: center;
+								cursor: pointer;
+								border: none;
 
-            .author{
-              color:  #19272E;
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 130%;
-            }
+								font-size: 16px;
+								font-weight: 600;
+								border-radius: 45px;
+							}
+						}
 
-          }
+						.cost {
+							margin: 5px 0 0 0;
+							color: #818eea;
+							font-size: 18px;
+							font-weight: 400;
+						}
+					}
+				}
 
+				.remove {
+					color: #f00;
+					font-size: 14px;
+					font-weight: 700;
+					letter-spacing: -0.4px;
+					position: absolute;
+					right: 0;
+					cursor: pointer;
+					text-decoration: none;
+				}
+			}
+		}
+		.orderSummary {
+			max-width: 300px;
+			display: flex;
+			flex-direction: column;
+			padding: 27px 0;
+			gap: 30px 0;
 
-          .costAndQuantity{
-            margin: 50px 0 0 0 ;
+			h3 {
+				color: var(--Text-color, #19272e);
 
-            .quantityAddAndRemove{
-              width: 150px;
-              display: flex;
-              align-items: center;
+				font-size: 22px;
+				font-weight: 600;
+				line-height: 30px; /* 136.364% */
+				letter-spacing: -0.55px;
+			}
 
-              .quantity{
-                color:  #19272E;
-                font-size: 16px;
-                font-weight: 400;
-              }
+			.details {
+				max-width: 400px;
+				display: flex;
+				flex-direction: column;
+				gap: 30px 0;
 
-              .subtractBtn{
-                width: 20px;
-                height: 20px;
-                background: none;
-                text-align: center;
-                cursor: pointer;
-                border: none;
-                margin: 0 10px;
-                font-size: 16px;
-                font-weight: 600;
-                border-radius: 45px;
-              }
+				.shipping {
+					display: flex;
+					justify-content: space-between;
+          gap: 0 50px;
+				}
 
-              .addBtn{
-                background: none;
-                width: 20px;
-                height: 20px;
-                text-align: center;
-                cursor: pointer;
-                border: none;
+				.payment {
+					padding-bottom: 30px;
+					display: flex;
+					justify-content: space-between;
+				}
 
-                font-size: 16px;
-                font-weight: 600;
-                border-radius: 45px;
-              }
-            }
+				.total {
+					display: flex;
+					justify-content: space-between;
 
+					.totalCost {
+						color: #818eea;
+						font-feature-settings:
+							'clig' off,
+							'liga' off;
+						font-size: 14px;
+						font-weight: 400;
+						letter-spacing: -0.3px;
+					}
+				}
+			}
 
-            .cost{
-              margin: 5px 0 0 0;
-              color:  #818EEA;
-              font-size: 18px;
-              font-weight: 400;
-            }
-          }
+			.checkoutBtn {
+				max-width:397px;
+				height: 50px;
+				border-radius: 8px;
+				border: 2px solid #818eea;
+				background: #818eea;
+				transition: 0.5s;
 
-        }
+				color: var(--Colors-White, #fff);
+				text-align: center;
 
+				font-size: 16px;
+				font-weight: 600;
+				letter-spacing: -0.4px;
+			}
 
-        .remove{
-          color: #F00;
-          font-size: 14px;
-          font-weight: 700;
-          letter-spacing: -0.4px;
-          position: absolute;
-          right: 0;
-          cursor: pointer;
-          text-decoration: none;
-        }
-
-      }
-
-
-    }
-    .orderSummary{
-      width: 300px;
-      display: flex;
-      flex-direction: column;
-      padding: 27px 0 ;
-      gap: 30px 0 ;
-
-      h3{
-        color: var(--Text-color, #19272E);
-
-        font-size: 22px;
-        font-weight: 600;
-        line-height: 30px; /* 136.364% */
-        letter-spacing: -0.55px;
-      }
-
-      .details{
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px 0 ;
-
-        .shipping{
-          display: flex;
-          justify-content: space-between;
-        }
-
-        .payment{
-          padding-bottom: 30px;
-          display: flex;
-          justify-content: space-between;
-        }
-
-        .total{
-          display: flex;
-          justify-content: space-between;
-
-          .totalCost{
-            color: #818EEA;
-            font-feature-settings: 'clig' off, 'liga' off;
-            font-size: 14px;
-            font-weight: 400;
-            letter-spacing: -0.3px;
-          }
-        }
-      }
-
-      .checkoutBtn{
-        width: 397px;
-        height: 50px;
-        border-radius: 8px;
-        border: 2px solid #818EEA;
-        background: #818EEA;
-        transition: 0.5s;
-
-        color: var(--Colors-White, #FFF);
-        text-align: center;
-
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: -0.4px;
-      }
-
-      .checkoutBtn:hover{
-        background: none;
-        color: #3a3a3a;
-      }
-    }
-  }
-
-
+			.checkoutBtn:hover {
+				background: none;
+				color: #3a3a3a;
+			}
+		}
+	}
 }

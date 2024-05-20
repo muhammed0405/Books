@@ -1,7 +1,28 @@
+.books {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
 
-
-.booksUiContainer{
+.books__title {
+	position: relative;
     display: flex;
-    gap: 0 20px ;
-    color: #24a6d5;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+	a {
+		transition: 0.5s;
+		color: #818eea;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 120%;
+	}
+}
+
+.booksUiContainer {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
 }

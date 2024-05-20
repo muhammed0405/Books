@@ -1,10 +1,10 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import './style.scss'
-import {useSelector} from "react-redux";
 
 const NewBooks = () => {
-	const bookData = require('../../../components/bookData/booksList')
+	const bookData = require('../../bookData/booksList')
 	const { dark } = useSelector((state) => state)
 
 	return (
@@ -13,8 +13,8 @@ const NewBooks = () => {
 				<div className="newBooks">
 					<h1 style={{ color: dark ? 'white' : 'black' }}>New Books</h1>
 					<div className="newBooksContainer">
-						{bookData.bookdata.slice(5,8,).map((book, index) => (
-							<div key={index} style={{width: "200px"}}>
+						{bookData.bookdata.slice(5, 8).map((book, index) => (
+							<div key={index} style={{ width: '200px' }}>
 								<Link to={`/books_details/${book.id}`}>
 									{' '}
 									<img
@@ -34,7 +34,9 @@ const NewBooks = () => {
 									{' '}
 									{book.title}
 								</h4>{' '}
-								<p style={{ color: dark ? 'yellow' : 'black' }}>{book.authors["0"]}</p>
+								<p style={{ color: dark ? 'yellow' : 'black' }}>
+									{book.authors['0']}
+								</p>
 							</div>
 						))}
 					</div>

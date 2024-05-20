@@ -1,16 +1,17 @@
 #footer {
-	height: 349px;
+	min-height: 349px;
 	background: #818eea;
-	width: 100%;
-	position: absolute;
-	left: 0;
+	padding: 30px;
 
 	.footer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 30px 0 0 0;
-
+		flex-wrap: wrap;
+		gap: 30px 20px;
+		justify-content: center;
+		
 		.title {
 			h1 {
 				color: white;
@@ -31,16 +32,17 @@
 
 			.footer--emailSendler {
 				position: relative;
+				border: 1px solid #fff;
+				border-radius: 8px;
 
-				#footer--emailSendler__input{
+				#footer--emailSendler__input {
 					padding: 0 0 0 5px;
 					background: none;
-					width: 398px;
+					width: 80%;
 					height: 40px;
 					outline: none;
 					position: relative;
-					border-radius: 8px;
-					border: 0.5px solid var(--Background-color, #fff);
+					border: none;
 
 					color: white;
 					font-feature-settings:
@@ -60,9 +62,9 @@
 				}
 
 				span.error-mark {
-					color: red; 
+					color: red;
 					margin-left: 5px;
-					font-size: 18px; 
+					font-size: 18px;
 				}
 
 				span {
@@ -73,7 +75,7 @@
 
 				button {
 					position: absolute;
-					left: 320px;
+					right: 10px;
 					background: none;
 					width: 80px;
 					height: 43px;
@@ -89,12 +91,16 @@
 				}
 			}
 		}
-
+		.footer--links {
+			display: flex;
+			gap: 20px;
+			flex-wrap: wrap;
+		}
 		.footer--info {
 			h3 {
 				color: #fff;
 
-				font-size: 20px;
+				font-size: clamp(15px, 3wv, 20px);
 				font-weight: 600;
 				line-height: 22px; /* 137.5% */
 				letter-spacing: -0.4px;
